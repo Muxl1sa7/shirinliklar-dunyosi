@@ -24,15 +24,15 @@ export default function ProductCard({ product }: { product: Product }) {
         <button
           onClick={() => toggleFavorite(product)}
           aria-label={`${product.name} sevimlilarga qo'shish`}
-          className={`absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 shadow-sm transition-colors hover:bg-white ${
+          className={`absolute right-2 top-2 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/90 shadow-sm transition-colors hover:bg-white sm:right-3 sm:top-3 sm:h-9 sm:w-9 ${
             favorite ? 'text-red-500' : 'text-brown-400'
           }`}
         >
           <FiHeart size={16} fill={favorite ? 'currentColor' : 'none'} />
         </button>
         {product.dietFriendly && (
-          <span className="absolute left-3 top-3 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-            Parhez uchun
+          <span className="absolute left-2 top-2 max-w-[60%] truncate rounded-full bg-green-600 px-2 py-0.5 text-[10px] font-semibold text-white sm:left-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">
+            Parhez
           </span>
         )}
       </div>

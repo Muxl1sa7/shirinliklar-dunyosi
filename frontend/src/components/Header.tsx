@@ -22,9 +22,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brown-50 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2 font-display text-2xl font-bold text-brown-700">
-          <GiCupcake className="text-3xl text-brown-400" />
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-4 sm:px-6 lg:px-8">
+        <Link
+          to="/"
+          className="flex shrink-0 items-center gap-2 whitespace-nowrap font-display text-xl font-bold text-brown-700 sm:text-2xl"
+        >
+          <GiCupcake className="text-2xl text-brown-400 sm:text-3xl" />
           Sweet Dreams
         </Link>
 
@@ -45,7 +48,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           <button className="hidden text-brown-700 transition-colors hover:text-brown-400 sm:block" aria-label="Qidirish">
             <FiSearch size={20} />
           </button>
@@ -54,7 +57,7 @@ export default function Header() {
           </button>
           <Link
             to="/favorites"
-            className="relative hidden text-brown-700 transition-colors hover:text-brown-400 sm:block"
+            className="relative text-brown-700 transition-colors hover:text-brown-400"
             aria-label="Sevimlilar"
           >
             <FiHeart size={20} />
@@ -66,10 +69,10 @@ export default function Header() {
           </Link>
           <Link
             to="/cart"
-            className="flex items-center gap-2 rounded-full bg-brown-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brown-600"
+            className="flex items-center gap-2 rounded-full bg-brown-700 px-2.5 py-2 text-sm font-medium text-white transition-colors hover:bg-brown-600 sm:px-4"
           >
             <FiShoppingCart size={18} />
-            {formatPrice(total)}
+            <span className="hidden sm:inline">{formatPrice(total)}</span>
           </Link>
           <button
             className="text-brown-700 lg:hidden"
