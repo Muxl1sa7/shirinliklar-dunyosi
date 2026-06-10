@@ -85,7 +85,7 @@ export const products: Product[] = [
     id: 'ferrero-rocher-cake',
     name: 'Ferrero Rocher tort',
     price: 150000,
-    image: 'https://images.unsplash.com/photo-1606890658317-7d14490b76fd?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1542124948-dc391252a940?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'special',
     description:
@@ -141,7 +141,7 @@ export const products: Product[] = [
     id: 'kitkat-cake',
     name: 'KitKat tort',
     price: 145000,
-    image: 'https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'wedding',
     description:
@@ -227,7 +227,7 @@ export const products: Product[] = [
     id: 'cheesecake',
     name: 'Cheesecake',
     price: 75000,
-    image: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'cookies',
     description: 'Krem pishloqdan tayyorlangan, yumshoq va boy ta\'mli desert.',
