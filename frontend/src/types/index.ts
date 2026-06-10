@@ -1,5 +1,5 @@
 export type CakeCategory = 'chocolate' | 'fruit' | 'birthday' | 'wedding' | 'special' | 'diet';
-export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts';
+export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts' | 'creamy';
 
 export interface Product {
   id: string;
@@ -13,6 +13,8 @@ export interface Product {
   flavors?: string[];
   dietFriendly: boolean;
   healthNote: string;
+  ingredients: string[];
+  storage: string;
 }
 
 export interface CartItem {

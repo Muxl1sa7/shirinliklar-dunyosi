@@ -1,5 +1,5 @@
 export type CakeCategory = 'chocolate' | 'fruit' | 'birthday' | 'wedding' | 'special' | 'diet';
-export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts';
+export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts' | 'creamy';
 
 export interface Product {
   id: string;
@@ -13,6 +13,8 @@ export interface Product {
   flavors?: string[];
   dietFriendly: boolean;
   healthNote: string;
+  ingredients: string[];
+  storage: string;
 }
 
 const SIZES = ['1 kg', '1.5 kg', '2 kg', '3 kg'];
@@ -38,6 +40,8 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Kakao kukuni', 'Tuxum', 'Shakar', "Sariyog'", 'Shokoladli ganash', 'Qaymoqli krem'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'red-velvet-cake',
@@ -52,12 +56,14 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Kakao kukuni', 'Tuxum', 'Shakar', 'Kefir', "Oziq-ovqat bo'yog'i", 'Krem-pishloq krem'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'strawberry-cake',
     name: 'Qulupnayli tort',
     price: 130000,
-    image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1611293388250-580b08c4a145?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'fruit',
     description:
@@ -66,6 +72,8 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ['Biskvit uni', 'Tuxum', 'Shakar', 'Yangi qulupnay', 'Qaymoqli krem', 'Qulupnay jele'],
+    storage: "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi).",
   },
   {
     id: 'caramel-cake',
@@ -80,6 +88,8 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Tuxum', 'Shakar', "Sariyog'", 'Karamel sous', 'Qaymoqli krem'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'ferrero-rocher-cake',
@@ -94,6 +104,8 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Tuxum', 'Shakar', "Findiq (yong'oq)", 'Shokolad', 'Ferrero Rocher konfetlari', 'Findiqli shokoladli krem'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'oreo-cake',
@@ -108,6 +120,8 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Kakao kukuni', 'Tuxum', 'Shakar', 'Oreo pechenyelari', 'Shokoladli krem'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'blueberry-cake',
@@ -122,6 +136,8 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ['Biskvit uni', 'Tuxum', 'Shakar', "Yangi ko'katеroq (blueberry)", 'Qaymoqli krem'],
+    storage: "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi).",
   },
   {
     id: 'lemon-cake',
@@ -136,6 +152,8 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Tuxum', 'Shakar', 'Limon qiyomi va sharbati', 'Qaymoqli krem'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'kitkat-cake',
@@ -150,10 +168,12 @@ export const products: Product[] = [
     flavors: FLAVORS,
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Tuxum', 'Shakar', 'Shokolad', 'KitKat batonchalari', "M&M's konfetlari", 'Shokoladli drip'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'diet-oatmeal-cake',
-    name: "Parhez bodring-yong'oqli tort",
+    name: "Parhez suli-yong'oqli tort",
     price: 110000,
     image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
@@ -164,6 +184,8 @@ export const products: Product[] = [
     flavors: ["Yong'oqli", 'Asalli'],
     dietFriendly: true,
     healthNote: DIET_HEALTH_NOTE,
+    ingredients: ["To'liq bug'doy uni", 'Suli yormasi', "Yong'oq", 'Asal', 'Tuxum', "Zaytun yog'i"],
+    storage: "Sovutgichda 0-4°C da 4 kungacha saqlang.",
   },
   {
     id: 'diet-stevia-cake',
@@ -178,6 +200,8 @@ export const products: Product[] = [
     flavors: ['Shokolad', "Yong'oqli"],
     dietFriendly: true,
     healthNote: DIET_HEALTH_NOTE,
+    ingredients: ["To'liq bug'doy uni", 'Kakao kukuni', 'Steviya', 'Tuxum', "Kam yog'li sut", "Yong'oq"],
+    storage: "Sovutgichda 0-4°C da 4 kungacha saqlang.",
   },
   {
     id: 'macarons',
@@ -189,6 +213,8 @@ export const products: Product[] = [
     description: 'Rang-barang va yengil frantsuz makaronlari, har xil ta\'mlarda.',
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ['Bodom uni', 'Tuxum oqi', 'Shakar kukuni', "Krem/ganash to'ldirma", "Oziq-ovqat bo'yoqlari"],
+    storage: "Sovutgichda 0-4°C da 5 kungacha saqlang.",
   },
   {
     id: 'cupcake',
@@ -200,6 +226,8 @@ export const products: Product[] = [
     description: 'Yumshoq biskvit va kremli bezak bilan tayyorlangan kichik shirinlik.',
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Tuxum', 'Shakar', "Sariyog'", 'Vanil', 'Shakar krem (buttercream)', 'Bezaklar'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'brownie',
@@ -211,6 +239,8 @@ export const products: Product[] = [
     description: "Zich va shokoladga boy brownie, choy yoki kofe bilan ajoyib uyg'unlikda.",
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ['Qora shokolad', "Sariyog'", 'Tuxum', 'Shakar', "Bug'doy uni", 'Kakao kukuni', "Yong'oq"],
+    storage: "Quruq, salqin joyda 5 kungacha yoki sovutgichda 7 kungacha saqlang.",
   },
   {
     id: 'donut',
@@ -222,6 +252,8 @@ export const products: Product[] = [
     description: 'Yumshoq va shirin glazurlangan donut, ertalabki nonushta uchun mukammal.',
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", 'Tuxum', 'Shakar', 'Sut', 'Xamirturush', 'Glazur', 'Rangli sepkichlar'],
+    storage: "Xona haroratida 1-2 kun ichida iste'mol qiling.",
   },
   {
     id: 'cheesecake',
@@ -229,10 +261,12 @@ export const products: Product[] = [
     price: 75000,
     image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
-    category: 'cookies',
+    category: 'creamy',
     description: 'Krem pishloqdan tayyorlangan, yumshoq va boy ta\'mli desert.',
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ['Krem-pishloq (cream cheese)', 'Tuxum', 'Shakar', 'Smetana', 'Pechene asosi', "Ko'k mevali sous"],
+    storage: "Sovutgichda 0-4°C da 4 kungacha saqlang.",
   },
   {
     id: 'tiramisu',
@@ -240,10 +274,12 @@ export const products: Product[] = [
     price: 70000,
     image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
-    category: 'cookies',
+    category: 'creamy',
     description: 'Klassik italyan deserti — kofe va mascarpone krem qatlamlari bilan.',
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Mascarpone pishlog'i", 'Tuxum', 'Shakar', 'Savoiardi pechenyelari', 'Espresso kofe', 'Kakao kukuni'],
+    storage: "Sovutgichda 0-4°C da 3 kungacha saqlang.",
   },
   {
     id: 'panna-cotta',
@@ -251,10 +287,12 @@ export const products: Product[] = [
     price: 65000,
     image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
-    category: 'cookies',
+    category: 'creamy',
     description: 'Yengil va silliq italyan kremli deserti, mevali sous bilan serviralanadi.',
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ['Qaymoq (krem)', 'Sut', 'Shakar', 'Jelatin', 'Vanil', 'Mevali sous'],
+    storage: "Sovutgichda 0-4°C da 4 kungacha saqlang.",
   },
   {
     id: 'cookies',
@@ -266,5 +304,7 @@ export const products: Product[] = [
     description: 'Shokolad bo\'lakchalari bilan tayyorlangan uy sharoitidagi pechenyelar.',
     dietFriendly: false,
     healthNote: STANDARD_HEALTH_NOTE,
+    ingredients: ["Bug'doy uni", "Sariyog'", 'Shakar', 'Tuxum', "Shokolad bo'lakchalari", 'Tuz'],
+    storage: "Quruq joyda, gigroskopik idishda 7 kungacha saqlang.",
   },
 ];

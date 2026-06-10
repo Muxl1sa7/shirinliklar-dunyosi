@@ -221,8 +221,8 @@ export default function ProductDetail() {
             <div className="max-w-2xl space-y-3 leading-relaxed text-brown-600">
               <p>{product.description}</p>
               <ul className="list-inside list-disc space-y-1">
-                <li>Tarkibi: yangi sut, shokolad, tuxum, un va shakar.</li>
-                <li>Saqlash: 0-4°C da, 3 kungacha.</li>
+                <li>Tarkibi: {product.ingredients.join(', ')}.</li>
+                <li>{product.storage}</li>
               </ul>
             </div>
           ) : (

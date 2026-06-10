@@ -11,6 +11,7 @@ const tabs: { label: string; value: DessertCategory | 'all' }[] = [
   { label: 'Braunilar', value: 'brownies' },
   { label: 'Pechenelar', value: 'cookies' },
   { label: 'Donutlar', value: 'donuts' },
+  { label: 'Kremli desertlar', value: 'creamy' },
 ];
 
 export default function Desserts() {
