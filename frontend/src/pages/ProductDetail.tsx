@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { FiFeather, FiTruck, FiShield, FiMinus, FiPlus } from 'react-icons/fi';
+import { FiFeather, FiTruck, FiShield, FiMinus, FiPlus, FiHeart, FiAlertTriangle, FiCheckCircle } from 'react-icons/fi';
 import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
+import { useFavorites } from '../context/FavoritesContext';
 import { formatPrice } from '../lib/format';
 
 const features = [
@@ -28,6 +29,7 @@ export default function ProductDetail() {
   const { id } = useParams();
   const product = id ? getProductById(id) : undefined;
   const { addToCart } = useCart();
+  const { isFavorite, toggleFavorite } = useFavorites();
 
   const [size, setSize] = useState<string | undefined>(product?.sizes?.[0]);
   const [quantity, setQuantity] = useState(1);
@@ -80,9 +82,44 @@ export default function ProductDetail() {
         </div>
 
         <div>
-          <h1 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">{product.name}</h1>
+          <div className="flex items-start justify-between gap-4">
+            <h1 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">{product.name}</h1>
+            <button
+              onClick={() => toggleFavorite(product)}
+              aria-label={`${product.name} sevimlilarga qo'shish`}
+              className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition-colors ${
+                isFavorite(product.id)
+                  ? 'border-red-200 bg-red-50 text-red-500'
+                  : 'border-brown-200 text-brown-400 hover:text-red-500'
+              }`}
+            >
+              <FiHeart size={20} fill={isFavorite(product.id) ? 'currentColor' : 'none'} />
+            </button>
+          </div>
           <p className="mt-2 text-2xl font-semibold text-brown-500">{formatPrice(product.price)}</p>
           <p className="mt-4 leading-relaxed text-brown-600">{product.description}</p>
+
+          <div
+            className={`mt-4 flex items-start gap-3 rounded-2xl border p-4 text-sm leading-relaxed ${
+              product.dietFriendly
+                ? 'border-green-200 bg-green-50 text-green-800'
+                : 'border-amber-200 bg-amber-50 text-amber-800'
+            }`}
+          >
+            {product.dietFriendly ? (
+              <FiCheckCircle className="mt-0.5 shrink-0" size={18} />
+            ) : (
+              <FiAlertTriangle className="mt-0.5 shrink-0" size={18} />
+            )}
+            <div>
+              <p className="font-semibold">
+                {product.dietFriendly
+                  ? 'Parhez uchun mos'
+                  : "Qandli diabet va parhez tutganlar uchun mumkin emas"}
+              </p>
+              <p className="mt-1">{product.healthNote}</p>
+            </div>
+          </div>
 
           {product.sizes && (
             <div className="mt-6">

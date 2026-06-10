@@ -1,4 +1,4 @@
-export type CakeCategory = 'chocolate' | 'fruit' | 'birthday' | 'wedding' | 'special';
+export type CakeCategory = 'chocolate' | 'fruit' | 'birthday' | 'wedding' | 'special' | 'diet';
 export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts';
 
 export interface Product {
@@ -11,10 +11,18 @@ export interface Product {
   description: string;
   sizes?: string[];
   flavors?: string[];
+  dietFriendly: boolean;
+  healthNote: string;
 }
 
 const SIZES = ['1 kg', '1.5 kg', '2 kg', '3 kg'];
 const FLAVORS = ['Shokolad', 'Vanil', "Qulupnay", 'Karamel'];
+
+const STANDARD_HEALTH_NOTE =
+  "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.";
+
+const DIET_HEALTH_NOTE =
+  "Shakar o'rniga tabiiy shirin beruvchi moddalar (stevia/asal) ishlatilgan va kaloriya miqdori past — qandli diabet va parhez tutganlar uchun xavfsiz.";
 
 export const products: Product[] = [
   {
@@ -28,6 +36,8 @@ export const products: Product[] = [
       "Eng sifatli shokolad va yangi ingredientlardan tayyorlangan mazali tort. Har qanday bayram uchun ajoyib tanlov, zavqli va shokoladga boy.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'red-velvet-cake',
@@ -40,6 +50,8 @@ export const products: Product[] = [
       "Yumshoq red velvet biskvit va kremli pishloq krem bilan bezatilgan klassik tort. Tug'ilgan kun bayramlari uchun mukammal.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'strawberry-cake',
@@ -52,6 +64,8 @@ export const products: Product[] = [
       "Yangi qulupnaylar va yengil kremli biskvitdan tayyorlangan mazali tort. Yozgi bayramlar uchun ideal tanlov.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'caramel-cake',
@@ -64,6 +78,8 @@ export const products: Product[] = [
       "Boy karamel sous va yumshoq biskvit qatlamlaridan iborat shirin tort. Karamel ishqibozlari uchun ajoyib tanlov.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'ferrero-rocher-cake',
@@ -76,6 +92,8 @@ export const products: Product[] = [
       "Ferrero Rocher konfetlari va findiqli shokolad krem bilan bezatilgan hashamatli tort. Maxsus kunlar uchun mo'ljallangan.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'oreo-cake',
@@ -88,6 +106,8 @@ export const products: Product[] = [
       "Oreo pechenyelari va shokoladli krem bilan qatlamlangan, yoshlar orasida mashhur bo'lgan mazali tort.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'blueberry-cake',
@@ -100,6 +120,8 @@ export const products: Product[] = [
       "Yangi ko'kateroq mevalar va yengil kremli biskvitdan tayyorlangan tabiiy va foydali tort.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'lemon-cake',
@@ -112,6 +134,8 @@ export const products: Product[] = [
       "Tetiklantiruvchi limon ta'mi va yengil krem bilan tayyorlangan, yozgi kayfiyat uchun ajoyib tort.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'kitkat-cake',
@@ -124,6 +148,36 @@ export const products: Product[] = [
       "KitKat shokoladlari bilan o'ralgan, M&M's va shokolad drip bilan bezatilgan ko'zga yoqimli tort.",
     sizes: SIZES,
     flavors: FLAVORS,
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
+  },
+  {
+    id: 'diet-oatmeal-cake',
+    name: "Parhez bodring-yong'oqli tort",
+    price: 110000,
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
+    type: 'cake',
+    category: 'diet',
+    description:
+      "Shakarsiz, to'liq bug'doy uni va yong'oq asosida tayyorlangan, asal bilan shirinlangan yengil tort. Kaloriyasi past, tolaga boy.",
+    sizes: SIZES,
+    flavors: ["Yong'oqli", 'Asalli'],
+    dietFriendly: true,
+    healthNote: DIET_HEALTH_NOTE,
+  },
+  {
+    id: 'diet-stevia-cake',
+    name: 'Steviyali shokoladli tort',
+    price: 115000,
+    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80',
+    type: 'cake',
+    category: 'diet',
+    description:
+      "Shakar o'rniga steviya bilan tayyorlangan, kam yog'li shokoladli biskvit asosidagi tort. Qandli diabet bilan og'rigan va parhez tutgan mijozlar uchun maxsus ishlab chiqilgan.",
+    sizes: SIZES,
+    flavors: ['Shokolad', "Yong'oqli"],
+    dietFriendly: true,
+    healthNote: DIET_HEALTH_NOTE,
   },
   {
     id: 'macarons',
@@ -133,6 +187,8 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'macarons',
     description: 'Rang-barang va yengil frantsuz makaronlari, har xil ta\'mlarda.',
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'cupcake',
@@ -142,6 +198,8 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'cupcakes',
     description: 'Yumshoq biskvit va kremli bezak bilan tayyorlangan kichik shirinlik.',
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'brownie',
@@ -151,6 +209,8 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'brownies',
     description: "Zich va shokoladga boy brownie, choy yoki kofe bilan ajoyib uyg'unlikda.",
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'donut',
@@ -160,6 +220,8 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'donuts',
     description: 'Yumshoq va shirin glazurlangan donut, ertalabki nonushta uchun mukammal.',
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'cheesecake',
@@ -169,6 +231,8 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'cookies',
     description: 'Krem pishloqdan tayyorlangan, yumshoq va boy ta\'mli desert.',
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'tiramisu',
@@ -178,6 +242,8 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'cookies',
     description: 'Klassik italyan deserti — kofe va mascarpone krem qatlamlari bilan.',
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'panna-cotta',
@@ -187,6 +253,8 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'cookies',
     description: 'Yengil va silliq italyan kremli deserti, mevali sous bilan serviralanadi.',
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
   {
     id: 'cookies',
@@ -196,5 +264,7 @@ export const products: Product[] = [
     type: 'dessert',
     category: 'cookies',
     description: 'Shokolad bo\'lakchalari bilan tayyorlangan uy sharoitidagi pechenyelar.',
+    dietFriendly: false,
+    healthNote: STANDARD_HEALTH_NOTE,
   },
 ];

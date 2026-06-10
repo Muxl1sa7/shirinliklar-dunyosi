@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FiSearch, FiUser, FiShoppingCart, FiMenu, FiX } from 'react-icons/fi';
+import { FiSearch, FiUser, FiShoppingCart, FiHeart, FiMenu, FiX } from 'react-icons/fi';
 import { GiCupcake } from 'react-icons/gi';
 import { useCart } from '../context/CartContext';
+import { useFavorites } from '../context/FavoritesContext';
 import { formatPrice } from '../lib/format';
 
 const navLinks = [
@@ -17,6 +18,7 @@ const navLinks = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const { total } = useCart();
+  const { favorites } = useFavorites();
 
   return (
     <header className="sticky top-0 z-50 border-b border-brown-50 bg-white/95 backdrop-blur">
@@ -50,10 +52,25 @@ export default function Header() {
           <button className="hidden text-brown-700 transition-colors hover:text-brown-400 sm:block" aria-label="Profil">
             <FiUser size={20} />
           </button>
-          <div className="flex items-center gap-2 rounded-full bg-brown-700 px-4 py-2 text-sm font-medium text-white">
+          <Link
+            to="/favorites"
+            className="relative hidden text-brown-700 transition-colors hover:text-brown-400 sm:block"
+            aria-label="Sevimlilar"
+          >
+            <FiHeart size={20} />
+            {favorites.length > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-brown-700 text-[10px] font-semibold text-white">
+                {favorites.length}
+              </span>
+            )}
+          </Link>
+          <Link
+            to="/cart"
+            className="flex items-center gap-2 rounded-full bg-brown-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brown-600"
+          >
             <FiShoppingCart size={18} />
             {formatPrice(total)}
-          </div>
+          </Link>
           <button
             className="text-brown-700 lg:hidden"
             onClick={() => setOpen((prev) => !prev)}

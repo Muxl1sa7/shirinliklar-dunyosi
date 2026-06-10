@@ -11,6 +11,7 @@ const tabs: { label: string; value: CakeCategory | 'all' }[] = [
   { label: "Tug'ilgan kun", value: 'birthday' },
   { label: "To'y", value: 'wedding' },
   { label: 'Maxsus', value: 'special' },
+  { label: 'Parhez uchun', value: 'diet' },
 ];
 
 const PAGE_SIZE = 6;

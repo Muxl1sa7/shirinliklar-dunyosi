@@ -63,13 +63,21 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 font-display text-lg font-semibold text-white">Mijozlarga xizmat</h3>
           <ul className="space-y-2 text-sm text-brown-100/80">
-            {customerService.map((item) => (
-              <li key={item}>
-                <a href="#" className="transition-colors hover:text-white">
-                  {item}
-                </a>
-              </li>
-            ))}
+            {customerService.map((item) =>
+              item === 'Sevimlilar' ? (
+                <li key={item}>
+                  <Link to="/favorites" className="transition-colors hover:text-white">
+                    {item}
+                  </Link>
+                </li>
+              ) : (
+                <li key={item}>
+                  <a href="#" className="transition-colors hover:text-white">
+                    {item}
+                  </a>
+                </li>
+              ),
+            )}
           </ul>
         </div>
 

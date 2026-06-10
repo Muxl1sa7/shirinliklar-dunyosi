@@ -1,4 +1,4 @@
-export type CakeCategory = 'chocolate' | 'fruit' | 'birthday' | 'wedding' | 'special';
+export type CakeCategory = 'chocolate' | 'fruit' | 'birthday' | 'wedding' | 'special' | 'diet';
 export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts';
 
 export interface Product {
@@ -11,6 +11,8 @@ export interface Product {
   description: string;
   sizes?: string[];
   flavors?: string[];
+  dietFriendly: boolean;
+  healthNote: string;
 }
 
 export interface CartItem {
