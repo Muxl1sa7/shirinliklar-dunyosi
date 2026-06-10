@@ -3,11 +3,12 @@ import { Link, useParams } from 'react-router-dom';
 import { FiFeather, FiTruck, FiShield, FiMinus, FiPlus } from 'react-icons/fi';
 import { getProductById } from '../data/products';
 import { useCart } from '../context/CartContext';
+import { formatPrice } from '../lib/format';
 
 const features = [
-  { icon: FiFeather, label: 'Fresh Ingredients' },
-  { icon: FiTruck, label: 'Fast Delivery' },
-  { icon: FiShield, label: '100% Quality' },
+  { icon: FiFeather, label: 'Yangi ingredientlar' },
+  { icon: FiTruck, label: 'Tezkor yetkazib berish' },
+  { icon: FiShield, label: '100% Sifat' },
 ];
 
 const sampleReviews = [
@@ -45,7 +46,7 @@ export default function ProductDetail() {
   }
 
   const categoryPath = product.type === 'cake' ? '/cakes' : '/desserts';
-  const categoryLabel = product.type === 'cake' ? 'Cakes' : 'Desserts';
+  const categoryLabel = product.type === 'cake' ? 'Tortlar' : 'Desertlar';
 
   const handleAddToCart = () => {
     addToCart(product, quantity, size);
@@ -63,7 +64,7 @@ export default function ProductDetail() {
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <p className="mb-8 text-sm text-brown-500">
         <Link to="/" className="hover:text-brown-700">
-          Home
+          Bosh sahifa
         </Link>
         <span className="mx-2">›</span>
         <Link to={categoryPath} className="hover:text-brown-700">
@@ -80,12 +81,12 @@ export default function ProductDetail() {
 
         <div>
           <h1 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">{product.name}</h1>
-          <p className="mt-2 text-2xl font-semibold text-brown-500">${product.price.toFixed(2)}</p>
+          <p className="mt-2 text-2xl font-semibold text-brown-500">{formatPrice(product.price)}</p>
           <p className="mt-4 leading-relaxed text-brown-600">{product.description}</p>
 
           {product.sizes && (
             <div className="mt-6">
-              <p className="mb-2 text-sm font-semibold text-brown-700">Size</p>
+              <p className="mb-2 text-sm font-semibold text-brown-700">O'lcham</p>
               <div className="flex flex-wrap gap-2">
                 {product.sizes.map((s) => (
                   <button
@@ -105,7 +106,7 @@ export default function ProductDetail() {
           )}
 
           <div className="mt-6">
-            <p className="mb-2 text-sm font-semibold text-brown-700">Quantity</p>
+            <p className="mb-2 text-sm font-semibold text-brown-700">Miqdor</p>
             <div className="inline-flex items-center gap-4 rounded-full border border-brown-200 px-4 py-2">
               <button
                 onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -130,13 +131,13 @@ export default function ProductDetail() {
               onClick={handleAddToCart}
               className="rounded-full bg-brown-700 px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-brown-600"
             >
-              Add To Cart
+              Savatga qo'shish
             </button>
             <button
               onClick={handleBuyNow}
               className="rounded-full border border-brown-700 px-7 py-3 text-sm font-semibold text-brown-700 transition-colors hover:bg-brown-700 hover:text-white"
             >
-              Buy Now
+              Hozir sotib olish
             </button>
           </div>
 
@@ -164,7 +165,7 @@ export default function ProductDetail() {
                 : 'text-brown-400 hover:text-brown-600'
             }`}
           >
-            Description
+            Tavsif
           </button>
           <button
             onClick={() => setActiveTab('reviews')}
@@ -174,7 +175,7 @@ export default function ProductDetail() {
                 : 'text-brown-400 hover:text-brown-600'
             }`}
           >
-            Reviews ({sampleReviews.length})
+            Sharhlar ({sampleReviews.length})
           </button>
         </div>
 

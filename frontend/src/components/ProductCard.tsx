@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FiShoppingCart } from 'react-icons/fi';
 import type { Product } from '../types';
 import { useCart } from '../context/CartContext';
+import { formatPrice } from '../lib/format';
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart } = useCart();
@@ -21,7 +22,7 @@ export default function ProductCard({ product }: { product: Product }) {
           <Link to={`/product/${product.id}`} className="font-display text-base font-semibold text-brown-800 hover:text-brown-500">
             {product.name}
           </Link>
-          <p className="mt-1 text-sm font-medium text-brown-500">${product.price.toFixed(2)}</p>
+          <p className="mt-1 text-sm font-medium text-brown-500">{formatPrice(product.price)}</p>
         </div>
         <button
           onClick={() => addToCart(product)}

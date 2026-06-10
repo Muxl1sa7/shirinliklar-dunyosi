@@ -33,12 +33,12 @@ export default function ContactUs() {
 
   return (
     <div>
-      <PageHeader title="Contact Us" />
+      <PageHeader title="Bog'lanish" />
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">Get In Touch</h2>
+            <h2 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">Biz bilan bog'laning</h2>
             <ul className="mt-6 space-y-4 text-brown-700">
               <li className="flex items-center gap-3">
                 <FiPhone className="text-brown-400" size={20} />
@@ -50,11 +50,11 @@ export default function ContactUs() {
               </li>
               <li className="flex items-center gap-3">
                 <FiMapPin className="text-brown-400" size={20} />
-                Tashkent, Uzbekistan
+                Toshkent, O'zbekiston
               </li>
               <li className="flex items-center gap-3">
                 <FiClock className="text-brown-400" size={20} />
-                Mon - Sat: 09:00 - 18:00, Sunday: 10:00 - 18:00
+                Dush - Shan: 09:00 - 18:00, Yakshanba: 10:00 - 18:00
               </li>
             </ul>
             <div className="mt-6 flex gap-3">
@@ -83,7 +83,7 @@ export default function ContactUs() {
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
-                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Your Name</label>
+                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Ismingiz</label>
                 <input
                   type="text"
                   required
@@ -93,7 +93,7 @@ export default function ContactUs() {
                 />
               </div>
               <div>
-                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Your Email</label>
+                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Email manzilingiz</label>
                 <input
                   type="email"
                   required
@@ -105,7 +105,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Subject</label>
+              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Mavzu</label>
               <input
                 type="text"
                 required
@@ -116,7 +116,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Message</label>
+              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Xabar</label>
               <textarea
                 rows={6}
                 required
@@ -131,7 +131,7 @@ export default function ContactUs() {
               disabled={status === 'loading'}
               className="rounded-full bg-brown-700 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-brown-600 disabled:opacity-60"
             >
-              {status === 'loading' ? 'Yuborilmoqda...' : 'Send Message'}
+              {status === 'loading' ? 'Yuborilmoqda...' : 'Xabar yuborish'}
             </button>
 
             {status === 'success' && (

@@ -4,21 +4,21 @@ import { FaPinterestP } from 'react-icons/fa';
 import { GiCupcake } from 'react-icons/gi';
 
 const quickLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/cakes', label: 'Cakes' },
-  { to: '/desserts', label: 'Desserts' },
-  { to: '/custom-order', label: 'Custom Order' },
-  { to: '/about', label: 'About Us' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/', label: 'Bosh sahifa' },
+  { to: '/cakes', label: 'Tortlar' },
+  { to: '/desserts', label: 'Desertlar' },
+  { to: '/custom-order', label: 'Maxsus buyurtma' },
+  { to: '/about', label: 'Biz haqimizda' },
+  { to: '/contact', label: "Bog'lanish" },
 ];
 
 const customerService = [
-  'My Account',
-  'Order Tracking',
-  'Wishlist',
-  'Terms & Conditions',
-  'Privacy Policy',
-  'FAQ',
+  'Mening hisobim',
+  'Buyurtmani kuzatish',
+  'Sevimlilar',
+  'Foydalanish shartlari',
+  'Maxfiylik siyosati',
+  'Savol-javoblar',
 ];
 
 export default function Footer() {
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-4 font-display text-lg font-semibold text-white">Quick Links</h3>
+          <h3 className="mb-4 font-display text-lg font-semibold text-white">Tezkor havolalar</h3>
           <ul className="space-y-2 text-sm text-brown-100/80">
             {quickLinks.map((link) => (
               <li key={link.to}>
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-4 font-display text-lg font-semibold text-white">Customer Service</h3>
+          <h3 className="mb-4 font-display text-lg font-semibold text-white">Mijozlarga xizmat</h3>
           <ul className="space-y-2 text-sm text-brown-100/80">
             {customerService.map((item) => (
               <li key={item}>
@@ -74,17 +74,17 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-4 font-display text-lg font-semibold text-white">Contact Us</h3>
+          <h3 className="mb-4 font-display text-lg font-semibold text-white">Bog'lanish</h3>
           <ul className="space-y-2 text-sm text-brown-100/80">
             <li>+998 90 123 45 67</li>
             <li>info@sweetdreams.uz</li>
-            <li>Tashkent, Uzbekistan</li>
+            <li>Toshkent, O'zbekiston</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-brown-600 py-5 text-center text-sm text-brown-100/70">
-        © {new Date().getFullYear()} Sweet Dreams. All Rights Reserved.
+        © {new Date().getFullYear()} Sweet Dreams. Barcha huquqlar himoyalangan.
       </div>
     </footer>
   );

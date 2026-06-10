@@ -7,26 +7,26 @@ import { subscribeNewsletter } from '../lib/api';
 
 const categories = [
   {
-    name: 'Cakes',
-    count: '12 Items',
+    name: 'Tortlar',
+    count: '12 ta mahsulot',
     to: '/cakes',
     image: 'https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=400&q=80',
   },
   {
-    name: 'Cupcakes',
-    count: '18 Items',
+    name: 'Kapkeyklar',
+    count: '18 ta mahsulot',
     to: '/desserts',
     image: 'https://images.unsplash.com/photo-1607478900766-efe13248b125?auto=format&fit=crop&w=400&q=80',
   },
   {
-    name: 'Desserts',
-    count: '20 Items',
+    name: 'Desertlar',
+    count: '20 ta mahsulot',
     to: '/desserts',
     image: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af?auto=format&fit=crop&w=400&q=80',
   },
   {
-    name: 'Macarons',
-    count: '15 Items',
+    name: 'Makaronlar',
+    count: '15 ta mahsulot',
     to: '/desserts',
     image: 'https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=400&q=80',
   },
@@ -35,17 +35,17 @@ const categories = [
 const features = [
   {
     icon: FiFeather,
-    title: 'Fresh Ingredients',
+    title: 'Yangi ingredientlar',
     description: 'Faqat eng yangi va sifatli mahsulotlardan foydalanamiz.',
   },
   {
     icon: FiTruck,
-    title: 'Fast Delivery',
+    title: 'Tezkor yetkazib berish',
     description: 'Buyurtmalaringizni tez va ishonchli yetkazib beramiz.',
   },
   {
     icon: FiAward,
-    title: 'Premium Quality',
+    title: 'Yuqori sifat',
     description: 'Har bir shirinligimiz katta sevgi bilan tayyorlanadi.',
   },
 ];
@@ -73,9 +73,9 @@ export default function Home() {
       <section className="bg-cream">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-brown-400">Handmade with love</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-brown-400">Sevgi bilan qo'lda tayyorlangan</p>
             <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-brown-800 sm:text-5xl lg:text-6xl">
-              Delicious Cakes For Every Occasion
+              Har Bir Bayram Uchun Mazali Tortlar
             </h1>
             <p className="mt-5 max-w-md text-brown-600">
               Biz eng sifatli mahsulotlardan foydalanib, siz uchun mazali shirinliklarni
@@ -86,13 +86,13 @@ export default function Home() {
                 to="/custom-order"
                 className="rounded-full bg-brown-700 px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-brown-600"
               >
-                Order Now
+                Hozir buyurtma bering
               </Link>
               <Link
                 to="/cakes"
                 className="rounded-full border border-brown-700 px-7 py-3 text-sm font-semibold text-brown-700 transition-colors hover:bg-brown-700 hover:text-white"
               >
-                View Menu
+                Menyuni ko'rish
               </Link>
             </div>
             <div className="mt-10 flex gap-2">
@@ -117,7 +117,7 @@ export default function Home() {
       {/* Popular Categories */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <h2 className="text-center font-display text-3xl font-bold text-brown-800 sm:text-4xl">
-          Popular Categories
+          Mashhur Kategoriyalar
         </h2>
         <div className="mx-auto mt-2 mb-10 h-1 w-16 rounded-full bg-brown-300" />
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
@@ -160,7 +160,7 @@ export default function Home() {
 
       {/* Best Sellers */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="text-center font-display text-3xl font-bold text-brown-800 sm:text-4xl">Best Sellers</h2>
+        <h2 className="text-center font-display text-3xl font-bold text-brown-800 sm:text-4xl">Eng Ko'p Sotilganlar</h2>
         <div className="mx-auto mt-2 mb-10 h-1 w-16 rounded-full bg-brown-300" />
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
           {bestSellerIds.map((id) => {
@@ -180,15 +180,15 @@ export default function Home() {
             className="h-72 w-full object-cover sm:h-80"
           />
           <div className="absolute inset-0 flex flex-col items-start justify-center bg-brown-900/60 px-8 sm:px-16">
-            <p className="text-sm font-semibold uppercase tracking-widest text-brown-100">Special Offer</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-brown-100">Maxsus Taklif</p>
             <h2 className="mt-3 max-w-md font-display text-3xl font-bold text-white sm:text-4xl">
-              Get 20% Off On Your First Order
+              Birinchi Buyurtmangizga 20% Chegirma Oling
             </h2>
             <Link
               to="/cakes"
               className="mt-6 rounded-full bg-white px-7 py-3 text-sm font-semibold text-brown-800 transition-colors hover:bg-brown-100"
             >
-              Order Now
+              Hozir buyurtma bering
             </Link>
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function Home() {
         <div className="grid items-center gap-8 overflow-hidden rounded-3xl bg-cream lg:grid-cols-2">
           <div className="px-8 py-12 sm:px-12">
             <h2 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">
-              Subscribe To Our Newsletter
+              Yangiliklarga Obuna Bo'ling
             </h2>
             <p className="mt-3 max-w-md text-brown-500">
               Yangiliklar va chegirmalar haqida birinchilardan bo'lib xabardor bo'ling.
@@ -210,14 +210,14 @@ export default function Home() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email address"
+                placeholder="Email manzilingiz"
                 className="w-full rounded-full border border-brown-200 bg-white px-5 py-3 text-sm text-brown-800 outline-none focus:border-brown-400"
               />
               <button
                 type="submit"
                 className="rounded-full bg-brown-700 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brown-600"
               >
-                Subscribe
+                Obuna bo'lish
               </button>
             </form>
             {subscribed && <p className="mt-3 text-sm font-medium text-green-600">Obuna bo'lganingiz uchun rahmat!</p>}

@@ -5,12 +5,12 @@ import { cakes } from '../data/products';
 import type { CakeCategory } from '../types';
 
 const tabs: { label: string; value: CakeCategory | 'all' }[] = [
-  { label: 'All', value: 'all' },
-  { label: 'Chocolate', value: 'chocolate' },
-  { label: 'Fruit', value: 'fruit' },
-  { label: 'Birthday', value: 'birthday' },
-  { label: 'Wedding', value: 'wedding' },
-  { label: 'Special', value: 'special' },
+  { label: 'Barchasi', value: 'all' },
+  { label: 'Shokoladli', value: 'chocolate' },
+  { label: 'Mevali', value: 'fruit' },
+  { label: "Tug'ilgan kun", value: 'birthday' },
+  { label: "To'y", value: 'wedding' },
+  { label: 'Maxsus', value: 'special' },
 ];
 
 const PAGE_SIZE = 6;
@@ -34,7 +34,7 @@ export default function Cakes() {
 
   return (
     <div>
-      <PageHeader title="Our Cakes" />
+      <PageHeader title="Bizning Tortlar" />
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-10 flex flex-wrap justify-center gap-3">

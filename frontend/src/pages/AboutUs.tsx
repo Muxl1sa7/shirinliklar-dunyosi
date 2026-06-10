@@ -7,12 +7,12 @@ const highlights = ['Sifatli mahsulotlar', 'Professional jamoa', "Mijozlar ishon
 export default function AboutUs() {
   return (
     <div>
-      <PageHeader title="About Us" />
+      <PageHeader title="Biz haqimizda" />
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">Our Story</h2>
+            <h2 className="font-display text-3xl font-bold text-brown-800 sm:text-4xl">Bizning tariximiz</h2>
             <p className="mt-4 leading-relaxed text-brown-600">
               Sweet Dreams 2018-yilda tashkil topgan. Bizning maqsadimiz — har bir mijozga eng
               mazali va chiroyli shirinliklarni taqdim etish. Biz sifat, ishonch va muhabbat
@@ -39,7 +39,7 @@ export default function AboutUs() {
 
       <section className="bg-cream py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-display text-3xl font-bold text-brown-800 sm:text-4xl">Our Team</h2>
+          <h2 className="text-center font-display text-3xl font-bold text-brown-800 sm:text-4xl">Jamoamiz</h2>
           <div className="mx-auto mt-2 mb-10 h-1 w-16 rounded-full bg-brown-300" />
           <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
             {team.map((member) => (

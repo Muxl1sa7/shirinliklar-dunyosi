@@ -3,14 +3,15 @@ import { Link, NavLink } from 'react-router-dom';
 import { FiSearch, FiUser, FiShoppingCart, FiMenu, FiX } from 'react-icons/fi';
 import { GiCupcake } from 'react-icons/gi';
 import { useCart } from '../context/CartContext';
+import { formatPrice } from '../lib/format';
 
 const navLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/cakes', label: 'Cakes' },
-  { to: '/desserts', label: 'Desserts' },
-  { to: '/custom-order', label: 'Custom Order' },
-  { to: '/about', label: 'About Us' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/', label: 'Bosh sahifa' },
+  { to: '/cakes', label: 'Tortlar' },
+  { to: '/desserts', label: 'Desertlar' },
+  { to: '/custom-order', label: 'Maxsus buyurtma' },
+  { to: '/about', label: 'Biz haqimizda' },
+  { to: '/contact', label: "Bog'lanish" },
 ];
 
 export default function Header() {
@@ -51,7 +52,7 @@ export default function Header() {
           </button>
           <div className="flex items-center gap-2 rounded-full bg-brown-700 px-4 py-2 text-sm font-medium text-white">
             <FiShoppingCart size={18} />
-            ${total.toFixed(2)}
+            {formatPrice(total)}
           </div>
           <button
             className="text-brown-700 lg:hidden"

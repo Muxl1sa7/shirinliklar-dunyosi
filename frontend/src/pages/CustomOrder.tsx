@@ -3,7 +3,7 @@ import PageHeader from '../components/PageHeader';
 import { submitCustomOrder } from '../lib/api';
 
 const sizes = ['1 kg', '1.5 kg', '2 kg', '3 kg', '5 kg+'];
-const flavors = ['Chocolate', 'Vanilla', 'Strawberry', 'Caramel', 'Red Velvet'];
+const flavors = ['Shokolad', 'Vanil', 'Qulupnay', 'Karamel', 'Red Velvet'];
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
@@ -39,25 +39,25 @@ export default function CustomOrder() {
 
   return (
     <div>
-      <PageHeader title="Custom Order" />
+      <PageHeader title="Maxsus buyurtma" />
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Full Name</label>
+              <label className="mb-1.5 block text-sm font-semibold text-brown-700">To'liq ism</label>
               <input
                 type="text"
                 required
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                placeholder="Your name"
+                placeholder="Ismingiz"
                 className="w-full rounded-xl border border-brown-200 px-4 py-3 text-sm text-brown-800 outline-none focus:border-brown-400"
               />
             </div>
 
             <div>
-              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Phone Number</label>
+              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Telefon raqami</label>
               <input
                 type="tel"
                 required
@@ -69,7 +69,7 @@ export default function CustomOrder() {
             </div>
 
             <div>
-              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Event Date</label>
+              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Tadbir sanasi</label>
               <input
                 type="date"
                 required
@@ -81,7 +81,7 @@ export default function CustomOrder() {
 
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
-                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Cake Size</label>
+                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Tort o'lchami</label>
                 <select
                   required
                   value={size}
@@ -89,7 +89,7 @@ export default function CustomOrder() {
                   className="w-full rounded-xl border border-brown-200 px-4 py-3 text-sm text-brown-800 outline-none focus:border-brown-400"
                 >
                   <option value="" disabled>
-                    Select size
+                    O'lchamni tanlang
                   </option>
                   {sizes.map((s) => (
                     <option key={s} value={s}>
@@ -100,7 +100,7 @@ export default function CustomOrder() {
               </div>
 
               <div>
-                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Flavor</label>
+                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Ta'm</label>
                 <select
                   required
                   value={flavor}
@@ -108,7 +108,7 @@ export default function CustomOrder() {
                   className="w-full rounded-xl border border-brown-200 px-4 py-3 text-sm text-brown-800 outline-none focus:border-brown-400"
                 >
                   <option value="" disabled>
-                    Select flavor
+                    Ta'mni tanlang
                   </option>
                   {flavors.map((f) => (
                     <option key={f} value={f}>
@@ -120,7 +120,7 @@ export default function CustomOrder() {
             </div>
 
             <div>
-              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Design / Note</label>
+              <label className="mb-1.5 block text-sm font-semibold text-brown-700">Dizayn / Izoh</label>
               <textarea
                 rows={4}
                 value={note}
@@ -135,7 +135,7 @@ export default function CustomOrder() {
               disabled={status === 'loading'}
               className="rounded-full bg-brown-700 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-brown-600 disabled:opacity-60"
             >
-              {status === 'loading' ? 'Yuborilmoqda...' : 'Submit Order'}
+              {status === 'loading' ? 'Yuborilmoqda...' : 'Buyurtmani yuborish'}
             </button>
 
             {status === 'success' && (

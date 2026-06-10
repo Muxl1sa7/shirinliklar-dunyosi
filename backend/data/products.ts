@@ -14,13 +14,13 @@ export interface Product {
 }
 
 const SIZES = ['1 kg', '1.5 kg', '2 kg', '3 kg'];
-const FLAVORS = ['Chocolate', 'Vanilla', 'Strawberry', 'Caramel'];
+const FLAVORS = ['Shokolad', 'Vanil', "Qulupnay", 'Karamel'];
 
 export const products: Product[] = [
   {
     id: 'chocolate-dream',
-    name: 'Chocolate Dream',
-    price: 25,
+    name: 'Shokoladli orzu',
+    price: 125000,
     image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'chocolate',
@@ -31,8 +31,8 @@ export const products: Product[] = [
   },
   {
     id: 'red-velvet-cake',
-    name: 'Red Velvet Cake',
-    price: 28,
+    name: 'Red Velvet tort',
+    price: 140000,
     image: 'https://images.unsplash.com/photo-1586985289906-406988974504?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'birthday',
@@ -43,8 +43,8 @@ export const products: Product[] = [
   },
   {
     id: 'strawberry-cake',
-    name: 'Strawberry Cake',
-    price: 26,
+    name: 'Qulupnayli tort',
+    price: 130000,
     image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'fruit',
@@ -55,8 +55,8 @@ export const products: Product[] = [
   },
   {
     id: 'caramel-cake',
-    name: 'Caramel Cake',
-    price: 26,
+    name: 'Karamelli tort',
+    price: 130000,
     image: 'https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'special',
@@ -67,8 +67,8 @@ export const products: Product[] = [
   },
   {
     id: 'ferrero-rocher-cake',
-    name: 'Ferrero Rocher Cake',
-    price: 30,
+    name: 'Ferrero Rocher tort',
+    price: 150000,
     image: 'https://images.unsplash.com/photo-1606890658317-7d14490b76fd?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'special',
@@ -79,8 +79,8 @@ export const products: Product[] = [
   },
   {
     id: 'oreo-cake',
-    name: 'Oreo Cake',
-    price: 24,
+    name: 'Oreo tort',
+    price: 120000,
     image: 'https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'chocolate',
@@ -91,8 +91,8 @@ export const products: Product[] = [
   },
   {
     id: 'blueberry-cake',
-    name: 'Blueberry Cake',
-    price: 25,
+    name: "Ko'kateroqli tort",
+    price: 125000,
     image: 'https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'fruit',
@@ -103,8 +103,8 @@ export const products: Product[] = [
   },
   {
     id: 'lemon-cake',
-    name: 'Lemon Cake',
-    price: 25,
+    name: 'Limonli tort',
+    price: 125000,
     image: 'https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'fruit',
@@ -115,8 +115,8 @@ export const products: Product[] = [
   },
   {
     id: 'kitkat-cake',
-    name: 'KitKat Cake',
-    price: 29,
+    name: 'KitKat tort',
+    price: 145000,
     image: 'https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=800&q=80',
     type: 'cake',
     category: 'wedding',
@@ -127,8 +127,8 @@ export const products: Product[] = [
   },
   {
     id: 'macarons',
-    name: 'Macarons',
-    price: 12,
+    name: 'Makaronlar',
+    price: 60000,
     image: 'https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'macarons',
@@ -136,8 +136,8 @@ export const products: Product[] = [
   },
   {
     id: 'cupcake',
-    name: 'Cupcake',
-    price: 10,
+    name: 'Kapkeyk',
+    price: 50000,
     image: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'cupcakes',
@@ -145,8 +145,8 @@ export const products: Product[] = [
   },
   {
     id: 'brownie',
-    name: 'Brownie',
-    price: 8,
+    name: 'Brauni',
+    price: 40000,
     image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'brownies',
@@ -155,7 +155,7 @@ export const products: Product[] = [
   {
     id: 'donut',
     name: 'Donut',
-    price: 6,
+    price: 30000,
     image: 'https://images.unsplash.com/photo-1551106652-a5bcf4b29ab6?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'donuts',
@@ -164,7 +164,7 @@ export const products: Product[] = [
   {
     id: 'cheesecake',
     name: 'Cheesecake',
-    price: 15,
+    price: 75000,
     image: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'cookies',
@@ -173,7 +173,7 @@ export const products: Product[] = [
   {
     id: 'tiramisu',
     name: 'Tiramisu',
-    price: 14,
+    price: 70000,
     image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'cookies',
@@ -182,7 +182,7 @@ export const products: Product[] = [
   {
     id: 'panna-cotta',
     name: 'Panna Cotta',
-    price: 13,
+    price: 65000,
     image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'cookies',
@@ -190,8 +190,8 @@ export const products: Product[] = [
   },
   {
     id: 'cookies',
-    name: 'Cookies',
-    price: 7,
+    name: 'Pechene',
+    price: 35000,
     image: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80',
     type: 'dessert',
     category: 'cookies',

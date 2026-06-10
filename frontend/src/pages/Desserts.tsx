@@ -5,12 +5,12 @@ import { desserts } from '../data/products';
 import type { DessertCategory } from '../types';
 
 const tabs: { label: string; value: DessertCategory | 'all' }[] = [
-  { label: 'All', value: 'all' },
-  { label: 'Macarons', value: 'macarons' },
-  { label: 'Cupcakes', value: 'cupcakes' },
-  { label: 'Brownies', value: 'brownies' },
-  { label: 'Cookies', value: 'cookies' },
-  { label: 'Donuts', value: 'donuts' },
+  { label: 'Barchasi', value: 'all' },
+  { label: 'Makaronlar', value: 'macarons' },
+  { label: 'Kapkeyklar', value: 'cupcakes' },
+  { label: 'Braunilar', value: 'brownies' },
+  { label: 'Pechenelar', value: 'cookies' },
+  { label: 'Donutlar', value: 'donuts' },
 ];
 
 export default function Desserts() {
@@ -23,7 +23,7 @@ export default function Desserts() {
 
   return (
     <div>
-      <PageHeader title="Desserts" />
+      <PageHeader title="Desertlar" />
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-10 flex flex-wrap justify-center gap-3">
