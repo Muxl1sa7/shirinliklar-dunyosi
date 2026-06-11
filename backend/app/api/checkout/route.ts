@@ -21,6 +21,7 @@ interface CheckoutCardBody {
 interface CheckoutBody {
   items: CheckoutItemBody[];
   card: CheckoutCardBody;
+  address: string;
 }
 
 const EXPIRY_REGEX = /^(0[1-9]|1[0-2])\/(\d{2})$/;
@@ -33,10 +34,14 @@ export async function POST(request: Request) {
   }
 
   const body = (await request.json()) as Partial<CheckoutBody>;
-  const { items, card } = body;
+  const { items, card, address } = body;
 
   if (!Array.isArray(items) || items.length === 0) {
     return NextResponse.json({ success: false, message: "Savatcha bo'sh" }, { status: 400 });
+  }
+
+  if (!address || !address.trim()) {
+    return NextResponse.json({ success: false, message: "Yetkazib berish manzilini kiriting" }, { status: 400 });
   }
 
   if (!card) {
@@ -103,6 +108,7 @@ export async function POST(request: Request) {
     items: orderItems,
     total,
     cardLast4,
+    address: address.trim(),
   });
 
   return NextResponse.json({ success: true, message: "To'lov muvaffaqiyatli amalga oshirildi", order });

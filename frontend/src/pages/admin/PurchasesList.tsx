@@ -34,6 +34,7 @@ export default function PurchasesList() {
               <th className="px-4 py-3 font-medium">Sana</th>
               <th className="px-4 py-3 font-medium">Mijoz</th>
               <th className="px-4 py-3 font-medium">Mahsulotlar</th>
+              <th className="px-4 py-3 font-medium">Manzil</th>
               <th className="px-4 py-3 font-medium">Jami</th>
               <th className="px-4 py-3 font-medium">Karta</th>
               <th className="px-4 py-3 font-medium">Holat</th>
@@ -42,13 +43,13 @@ export default function PurchasesList() {
           <tbody>
             {loading ? (
               <tr>
-                <td colSpan={6} className="px-4 py-6 text-center text-slate-400">
+                <td colSpan={7} className="px-4 py-6 text-center text-slate-400">
                   Yuklanmoqda...
                 </td>
               </tr>
             ) : purchases.length === 0 ? (
               <tr>
-                <td colSpan={6} className="px-4 py-6 text-center text-slate-400">
+                <td colSpan={7} className="px-4 py-6 text-center text-slate-400">
                   Xaridlar topilmadi.
                 </td>
               </tr>
@@ -76,6 +77,7 @@ export default function PurchasesList() {
                       ))}
                     </ul>
                   </td>
+                  <td className="max-w-xs px-4 py-3 text-slate-600">{purchase.address}</td>
                   <td className="whitespace-nowrap px-4 py-3 font-semibold text-slate-800">
                     {formatPrice(purchase.total)}
                   </td>

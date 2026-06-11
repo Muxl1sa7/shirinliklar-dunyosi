@@ -218,6 +218,7 @@ export interface PurchaseOrder {
   total: number;
   status: 'paid' | 'received';
   cardLast4: string;
+  address: string;
   createdAt: string;
   receivedAt?: string;
 }
@@ -249,11 +250,11 @@ export interface Review {
   adminReplyAt?: string;
 }
 
-export const checkout = (items: CheckoutItemInput[], card: CheckoutCardInput) =>
+export const checkout = (items: CheckoutItemInput[], card: CheckoutCardInput, address: string) =>
   request<{ success: boolean; message?: string; order?: PurchaseOrder }>('/api/checkout', {
     method: 'POST',
     credentials: 'include',
-    body: JSON.stringify({ items, card }),
+    body: JSON.stringify({ items, card, address }),
   });
 
 export const getMyPurchases = () =>

@@ -19,6 +19,7 @@ export interface PurchaseOrder {
   total: number;
   status: 'paid' | 'received';
   cardLast4: string;
+  address: string;
   createdAt: string;
   receivedAt?: string;
 }

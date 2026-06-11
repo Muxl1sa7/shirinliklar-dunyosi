@@ -176,6 +176,7 @@ export default function Profile() {
                       {statusLabel(order.status)}
                     </span>
                   </div>
+                  {order.address && <p className="mt-1 text-sm text-brown-500">Manzil: {order.address}</p>}
 
                   <div className="mt-3 space-y-3">
                     {order.items.map((item) => {

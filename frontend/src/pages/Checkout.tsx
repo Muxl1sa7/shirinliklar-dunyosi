@@ -11,6 +11,7 @@ export default function Checkout() {
   const { items, total, clearCart } = useCart();
   const navigate = useNavigate();
 
+  const [address, setAddress] = useState('');
   const [cardNumber, setCardNumber] = useState('');
   const [expiry, setExpiry] = useState('');
   const [cvv, setCvv] = useState('');
@@ -56,12 +57,16 @@ export default function Checkout() {
     }));
 
     try {
-      const result = await checkout(checkoutItems, {
-        number: cardNumber,
-        expiry,
-        cvv,
-        holder,
-      });
+      const result = await checkout(
+        checkoutItems,
+        {
+          number: cardNumber,
+          expiry,
+          cvv,
+          holder,
+        },
+        address,
+      );
 
       if (result.success) {
         clearCart();
@@ -115,8 +120,20 @@ export default function Checkout() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-semibold text-brown-800">Karta ma'lumotlari</h2>
+            <h2 className="font-display text-xl font-semibold text-brown-800">Yetkazib berish va to'lov</h2>
             <form onSubmit={handleSubmit} className="mt-4 space-y-5">
+              <div>
+                <label className="mb-1.5 block text-sm font-semibold text-brown-700">Yetkazib berish manzili</label>
+                <textarea
+                  required
+                  rows={2}
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
+                  placeholder="Shahar, tuman, ko'cha, uy raqami"
+                  className="w-full rounded-xl border border-brown-200 px-4 py-3 text-sm text-brown-800 outline-none focus:border-brown-400"
+                />
+              </div>
+
               <div>
                 <label className="mb-1.5 block text-sm font-semibold text-brown-700">Karta raqami</label>
                 <input
