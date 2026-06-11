@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { useAdminAuth } from '../../context/AdminAuthContext';
 
 export default function AdminLogin() {
@@ -67,6 +67,12 @@ export default function AdminLogin() {
           >
             {submitting ? 'Kirilmoqda...' : 'Kirish'}
           </button>
+
+          <p className="text-center text-xs text-slate-400">
+            <Link to="/login" className="hover:text-slate-600 hover:underline">
+              Mijoz sifatida kirish
+            </Link>
+          </p>
         </form>
       </div>
     </div>

@@ -33,3 +33,9 @@ export async function readRecords<T>(fileName: string): Promise<T[]> {
     return [];
   }
 }
+
+export async function writeRecords<T>(fileName: string, records: T[]): Promise<void> {
+  const filePath = path.join(DATA_DIR, fileName);
+  await ensureFile(filePath);
+  await fs.writeFile(filePath, JSON.stringify(records, null, 2), 'utf-8');
+}

@@ -3,6 +3,7 @@ import { FiShoppingCart, FiTrash2 } from 'react-icons/fi';
 import PageHeader from '../components/PageHeader';
 import { useCart } from '../context/CartContext';
 import { formatPrice } from '../lib/format';
+import { getPriceForSize } from '../lib/pricing';
 
 export default function Cart() {
   const { items, removeFromCart, total } = useCart();
@@ -39,7 +40,7 @@ export default function Cart() {
                       · Soni: {item.quantity}
                     </p>
                     <p className="mt-1 text-sm font-medium text-brown-700">
-                      {formatPrice(item.product.price * item.quantity)}
+                      {formatPrice(getPriceForSize(item.product.price, item.size) * item.quantity)}
                     </p>
                   </div>
                   <button
@@ -58,12 +59,18 @@ export default function Cart() {
               <span className="text-2xl font-bold text-brown-800">{formatPrice(total)}</span>
             </div>
 
-            <div className="mt-6 flex justify-end">
+            <div className="mt-6 flex flex-wrap justify-end gap-3">
               <Link
                 to="/custom-order"
+                className="rounded-full border border-brown-700 px-8 py-3 text-sm font-semibold text-brown-700 transition-colors hover:bg-brown-700 hover:text-white"
+              >
+                Maxsus buyurtma
+              </Link>
+              <Link
+                to="/checkout"
                 className="rounded-full bg-brown-700 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-brown-600"
               >
-                Buyurtmani rasmiylashtirish
+                To'lovga o'tish
               </Link>
             </div>
           </div>

@@ -1,29 +1,17 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { FiFeather, FiTruck, FiShield, FiMinus, FiPlus, FiHeart, FiAlertTriangle, FiCheckCircle } from 'react-icons/fi';
-import { getProductById } from '../lib/api';
+import { getProductById, getProductReviews, type Review } from '../lib/api';
 import { useCart } from '../context/CartContext';
 import { useFavorites } from '../context/FavoritesContext';
 import { formatPrice } from '../lib/format';
+import { getPriceForSize } from '../lib/pricing';
 import type { Product } from '../types';
 
 const features = [
   { icon: FiFeather, label: 'Yangi ingredientlar' },
   { icon: FiTruck, label: 'Tezkor yetkazib berish' },
   { icon: FiShield, label: '100% Sifat' },
-];
-
-const sampleReviews = [
-  {
-    name: 'Dilnoza A.',
-    text: "Juda mazali va chiroyli bezatilgan! Oilaviy bayramimiz uchun mukammal bo'ldi.",
-    rating: 5,
-  },
-  {
-    name: 'Javlon K.',
-    text: 'Yetkazib berish tez va sifat a\'lo darajada. Albatta yana buyurtma beraman.',
-    rating: 5,
-  },
 ];
 
 export default function ProductDetail() {
@@ -37,6 +25,7 @@ export default function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState<'description' | 'reviews'>('description');
   const [message, setMessage] = useState('');
+  const [reviews, setReviews] = useState<Review[]>([]);
 
   useEffect(() => {
     if (!id) return;
@@ -47,6 +36,10 @@ export default function ProductDetail() {
       })
       .catch(() => setProduct(null))
       .finally(() => setLoading(false));
+
+    getProductReviews(id)
+      .then((data) => setReviews(data.reviews))
+      .catch(() => setReviews([]));
   }, [id]);
 
   if (loading) {
@@ -117,7 +110,7 @@ export default function ProductDetail() {
               <FiHeart size={20} fill={isFavorite(product.id) ? 'currentColor' : 'none'} />
             </button>
           </div>
-          <p className="mt-2 text-2xl font-semibold text-brown-500">{formatPrice(product.price)}</p>
+          <p className="mt-2 text-2xl font-semibold text-brown-500">{formatPrice(getPriceForSize(product.price, size))}</p>
           <p className="mt-4 leading-relaxed text-brown-600">{product.description}</p>
 
           <div
@@ -233,7 +226,7 @@ export default function ProductDetail() {
                 : 'text-brown-400 hover:text-brown-600'
             }`}
           >
-            Sharhlar ({sampleReviews.length})
+            Sharhlar ({reviews.length})
           </button>
         </div>
 
@@ -248,15 +241,31 @@ export default function ProductDetail() {
             </div>
           ) : (
             <div className="max-w-2xl space-y-6">
-              {sampleReviews.map((review) => (
-                <div key={review.name} className="rounded-2xl bg-cream p-5">
-                  <div className="flex items-center justify-between">
-                    <p className="font-semibold text-brown-800">{review.name}</p>
-                    <p className="text-sm text-brown-400">{'★'.repeat(review.rating)}</p>
+              {reviews.length === 0 ? (
+                <p className="text-brown-400">Hozircha sharhlar yo'q.</p>
+              ) : (
+                reviews.map((review) => (
+                  <div key={review.id} className="rounded-2xl bg-cream p-5">
+                    <div className="flex items-center justify-between">
+                      <p className="font-semibold text-brown-800">{review.userName}</p>
+                      <p className="text-sm text-brown-400">
+                        {'★'.repeat(review.rating)}
+                        {'☆'.repeat(5 - review.rating)}
+                      </p>
+                    </div>
+                    <p className="mt-1 text-xs text-brown-400">
+                      {new Date(review.createdAt).toLocaleDateString('uz-UZ')}
+                    </p>
+                    <p className="mt-2 text-sm text-brown-600">{review.text}</p>
+                    {review.adminReply && (
+                      <div className="ml-4 mt-3 rounded-xl border-l-2 border-brown-300 bg-brown-50 p-3">
+                        <p className="text-sm font-semibold text-brown-700">Admin javobi:</p>
+                        <p className="mt-1 text-sm text-brown-600">{review.adminReply}</p>
+                      </div>
+                    )}
                   </div>
-                  <p className="mt-2 text-sm text-brown-600">{review.text}</p>
-                </div>
-              ))}
+                ))
+              )}
             </div>
           )}
         </div>

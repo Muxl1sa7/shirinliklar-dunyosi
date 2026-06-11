@@ -1,10 +1,12 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
 import type { CartItem, Product } from '../types';
+import { getPriceForSize } from '../lib/pricing';
 
 interface CartContextValue {
   items: CartItem[];
   addToCart: (product: Product, quantity?: number, size?: string, flavor?: string) => void;
   removeFromCart: (index: number) => void;
+  clearCart: () => void;
   total: number;
   count: number;
 }
@@ -22,11 +24,18 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setItems((prev) => prev.filter((_, i) => i !== index));
   };
 
-  const total = items.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
+  const clearCart = () => {
+    setItems([]);
+  };
+
+  const total = items.reduce(
+    (sum, item) => sum + getPriceForSize(item.product.price, item.size) * item.quantity,
+    0,
+  );
   const count = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <CartContext.Provider value={{ items, addToCart, removeFromCart, total, count }}>
+    <CartContext.Provider value={{ items, addToCart, removeFromCart, clearCart, total, count }}>
       {children}
     </CartContext.Provider>
   );

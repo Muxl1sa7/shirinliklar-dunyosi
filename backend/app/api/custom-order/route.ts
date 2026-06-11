@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { appendRecord } from '@/lib/storage';
+import { getCurrentUserId } from '@/lib/customerAuth';
 
 interface CustomOrderBody {
   fullName: string;
@@ -18,6 +19,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, message: 'Barcha majburiy maydonlarni to\'ldiring' }, { status: 400 });
   }
 
+  const userId = await getCurrentUserId();
+
   await appendRecord('orders.json', {
     fullName,
     phone,
@@ -26,6 +29,7 @@ export async function POST(request: Request) {
     flavor,
     note: note ?? '',
     createdAt: new Date().toISOString(),
+    ...(userId ? { userId } : {}),
   });
 
   return NextResponse.json({ success: true, message: 'Buyurtma qabul qilindi' });

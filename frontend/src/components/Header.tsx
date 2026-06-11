@@ -4,6 +4,7 @@ import { FiSearch, FiUser, FiShoppingCart, FiHeart, FiMenu, FiX } from 'react-ic
 import { GiCupcake } from 'react-icons/gi';
 import { useCart } from '../context/CartContext';
 import { useFavorites } from '../context/FavoritesContext';
+import { useAuth } from '../context/AuthContext';
 import { formatPrice } from '../lib/format';
 
 const navLinks = [
@@ -19,6 +20,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const { total } = useCart();
   const { favorites } = useFavorites();
+  const { isAuthenticated } = useAuth();
+  const profileTo = isAuthenticated ? '/profile' : '/login';
 
   return (
     <header className="sticky top-0 z-50 border-b border-brown-50 bg-white/95 backdrop-blur">
@@ -52,9 +55,13 @@ export default function Header() {
           <button className="hidden text-brown-700 transition-colors hover:text-brown-400 sm:block" aria-label="Qidirish">
             <FiSearch size={20} />
           </button>
-          <button className="hidden text-brown-700 transition-colors hover:text-brown-400 sm:block" aria-label="Profil">
+          <Link
+            to={profileTo}
+            className="hidden text-brown-700 transition-colors hover:text-brown-400 sm:block"
+            aria-label="Profil"
+          >
             <FiUser size={20} />
-          </button>
+          </Link>
           <Link
             to="/favorites"
             className="relative text-brown-700 transition-colors hover:text-brown-400"
@@ -101,6 +108,17 @@ export default function Header() {
               {link.label}
             </NavLink>
           ))}
+          <NavLink
+            to={profileTo}
+            onClick={() => setOpen(false)}
+            className={({ isActive }) =>
+              `rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                isActive ? 'bg-brown-50 text-brown-700' : 'text-brown-800/70 hover:bg-brown-50'
+              }`
+            }
+          >
+            {isAuthenticated ? 'Profil' : 'Kirish'}
+          </NavLink>
         </nav>
       )}
     </header>

@@ -35,6 +35,7 @@ export interface ContactPayload {
 export const submitCustomOrder = (payload: CustomOrderPayload) =>
   request<{ success: boolean; message: string }>('/api/custom-order', {
     method: 'POST',
+    credentials: 'include',
     body: JSON.stringify(payload),
   });
 
@@ -80,6 +81,7 @@ export interface AdminProductInput {
 
 export interface OrderRecord extends CustomOrderPayload {
   createdAt: string;
+  userId?: string;
 }
 
 export interface MessageRecord extends ContactPayload {
@@ -137,3 +139,137 @@ export const adminGetMessages = () =>
 
 export const adminGetSubscribers = () =>
   request<{ subscribers: SubscriberRecord[] }>('/api/admin/subscribers', { credentials: 'include' });
+
+// --- Customer auth ---
+
+export interface CustomerUser {
+  id: string;
+  name: string;
+  email: string;
+  phone: string;
+}
+
+export interface RegisterPayload {
+  name: string;
+  email: string;
+  phone: string;
+  password: string;
+}
+
+export interface LoginPayload {
+  email: string;
+  password: string;
+}
+
+export const registerCustomer = (data: RegisterPayload) =>
+  request<{ success: boolean; message?: string; user?: CustomerUser }>('/api/auth/register', {
+    method: 'POST',
+    credentials: 'include',
+    body: JSON.stringify(data),
+  });
+
+export const loginCustomer = (data: LoginPayload) =>
+  request<{ success: boolean; message?: string; user?: CustomerUser }>('/api/auth/login', {
+    method: 'POST',
+    credentials: 'include',
+    body: JSON.stringify(data),
+  });
+
+export const logoutCustomer = () =>
+  request<{ success: boolean }>('/api/auth/logout', {
+    method: 'POST',
+    credentials: 'include',
+  });
+
+export const getCustomerMe = () =>
+  request<{ authenticated: boolean; user?: CustomerUser }>('/api/auth/me', { credentials: 'include' });
+
+export const getMyOrders = () =>
+  request<{ orders: OrderRecord[] }>('/api/auth/orders', { credentials: 'include' });
+
+// --- Checkout, purchases & reviews ---
+
+export interface PurchaseOrderItem {
+  productId: string;
+  name: string;
+  image: string;
+  size?: string;
+  flavor?: string;
+  quantity: number;
+  unitPrice: number;
+  lineTotal: number;
+}
+
+export interface PurchaseOrder {
+  id: string;
+  userId: string;
+  items: PurchaseOrderItem[];
+  total: number;
+  status: 'paid' | 'received';
+  cardLast4: string;
+  createdAt: string;
+  receivedAt?: string;
+}
+
+export interface CheckoutCardInput {
+  number: string;
+  expiry: string;
+  cvv: string;
+  holder: string;
+}
+
+export interface CheckoutItemInput {
+  productId: string;
+  size?: string;
+  flavor?: string;
+  quantity: number;
+}
+
+export interface Review {
+  id: string;
+  productId: string;
+  userId: string;
+  userName: string;
+  orderId: string;
+  rating: number;
+  text: string;
+  createdAt: string;
+  adminReply?: string;
+  adminReplyAt?: string;
+}
+
+export const checkout = (items: CheckoutItemInput[], card: CheckoutCardInput) =>
+  request<{ success: boolean; message?: string; order?: PurchaseOrder }>('/api/checkout', {
+    method: 'POST',
+    credentials: 'include',
+    body: JSON.stringify({ items, card }),
+  });
+
+export const getMyPurchases = () =>
+  request<{ purchases: PurchaseOrder[] }>('/api/purchases', { credentials: 'include' });
+
+export const receivePurchase = (id: string) =>
+  request<{ success: boolean; order?: PurchaseOrder; message?: string }>(`/api/purchases/${id}/receive`, {
+    method: 'POST',
+    credentials: 'include',
+  });
+
+export const getProductReviews = (productId: string) =>
+  request<{ reviews: Review[] }>(`/api/products/${productId}/reviews`);
+
+export const submitReview = (data: { orderId: string; productId: string; rating: number; text: string }) =>
+  request<{ success: boolean; message?: string; review?: Review }>('/api/reviews', {
+    method: 'POST',
+    credentials: 'include',
+    body: JSON.stringify(data),
+  });
+
+export const adminGetReviews = () =>
+  request<{ reviews: Review[] }>('/api/admin/reviews', { credentials: 'include' });
+
+export const adminReplyToReview = (id: string, reply: string) =>
+  request<{ success: boolean; review?: Review; message?: string }>(`/api/admin/reviews/${id}/reply`, {
+    method: 'PUT',
+    credentials: 'include',
+    body: JSON.stringify({ reply }),
+  });
