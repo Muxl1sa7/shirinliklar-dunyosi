@@ -44,6 +44,11 @@ export async function getPurchasesByUser(userId: string): Promise<PurchaseOrder[
   return all.filter((order) => order.userId === userId);
 }
 
+export async function getAllPurchases(): Promise<PurchaseOrder[]> {
+  const all = await readRecords<PurchaseOrder>(FILE);
+  return [...all].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+}
+
 export async function getPurchaseById(id: string): Promise<PurchaseOrder | undefined> {
   const all = await readRecords<PurchaseOrder>(FILE);
   return all.find((order) => order.id === id);

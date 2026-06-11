@@ -275,6 +275,15 @@ export const submitReview = (data: { orderId: string; productId: string; rating:
     body: JSON.stringify(data),
   });
 
+export interface AdminPurchaseOrder extends PurchaseOrder {
+  userName: string;
+  userEmail: string;
+  userPhone: string;
+}
+
+export const adminGetPurchases = () =>
+  request<{ purchases: AdminPurchaseOrder[] }>('/api/admin/purchases', { credentials: 'include' });
+
 export const adminGetReviews = () =>
   request<{ reviews: Review[] }>('/api/admin/reviews', { credentials: 'include' });
 

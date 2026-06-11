@@ -29,6 +29,7 @@ import MessagesList from './pages/admin/MessagesList';
 import SubscribersList from './pages/admin/SubscribersList';
 import ReviewsList from './pages/admin/ReviewsList';
 import UsersList from './pages/admin/UsersList';
+import PurchasesList from './pages/admin/PurchasesList';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
                     <Route path="products/new" element={<ProductForm />} />
                     <Route path="products/:id/edit" element={<ProductForm />} />
                     <Route path="orders" element={<OrdersList />} />
+                    <Route path="purchases" element={<PurchasesList />} />
                     <Route path="messages" element={<MessagesList />} />
                     <Route path="subscribers" element={<SubscribersList />} />
                     <Route path="reviews" element={<ReviewsList />} />
