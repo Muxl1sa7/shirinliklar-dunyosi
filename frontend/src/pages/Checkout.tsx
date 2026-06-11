@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react';
+import { useState, type ChangeEvent, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiShoppingCart } from 'react-icons/fi';
 import PageHeader from '../components/PageHeader';
@@ -37,6 +37,11 @@ export default function Checkout() {
       </div>
     );
   }
+
+  const handleExpiryChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const digits = e.target.value.replace(/\D/g, '').slice(0, 4);
+    setExpiry(digits.length > 2 ? `${digits.slice(0, 2)}/${digits.slice(2)}` : digits);
+  };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -129,10 +134,12 @@ export default function Checkout() {
                   <label className="mb-1.5 block text-sm font-semibold text-brown-700">Amal qilish muddati</label>
                   <input
                     type="text"
+                    inputMode="numeric"
                     required
                     value={expiry}
-                    onChange={(e) => setExpiry(e.target.value)}
+                    onChange={handleExpiryChange}
                     placeholder="MM/YY"
+                    maxLength={5}
                     className="w-full rounded-xl border border-brown-200 px-4 py-3 text-sm text-brown-800 outline-none focus:border-brown-400"
                   />
                 </div>
