@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { FiGrid, FiBox, FiShoppingBag, FiMail, FiUsers, FiStar, FiLogOut } from 'react-icons/fi';
+import { FiGrid, FiBox, FiShoppingBag, FiMail, FiUsers, FiUser, FiStar, FiLogOut } from 'react-icons/fi';
 import { useAdminAuth } from '../context/AdminAuthContext';
 
 const navItems = [
@@ -7,6 +7,7 @@ const navItems = [
   { to: '/admin/products', label: 'Mahsulotlar', icon: FiBox, end: false },
   { to: '/admin/orders', label: 'Buyurtmalar', icon: FiShoppingBag, end: false },
   { to: '/admin/reviews', label: 'Sharhlar', icon: FiStar, end: false },
+  { to: '/admin/users', label: 'Foydalanuvchilar', icon: FiUser, end: false },
   { to: '/admin/messages', label: 'Xabarlar', icon: FiMail, end: false },
   { to: '/admin/subscribers', label: 'Obunachilar', icon: FiUsers, end: false },
 ];

@@ -1,34 +1,49 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiBox, FiShoppingBag, FiMail, FiUsers } from 'react-icons/fi';
-import { adminGetProducts, adminGetOrders, adminGetMessages, adminGetSubscribers } from '../../lib/api';
+import { FiBox, FiShoppingBag, FiMail, FiUsers, FiUser } from 'react-icons/fi';
+import {
+  adminGetProducts,
+  adminGetOrders,
+  adminGetMessages,
+  adminGetSubscribers,
+  adminGetUsers,
+} from '../../lib/api';
 
 interface Stats {
   products: number;
   orders: number;
   messages: number;
   subscribers: number;
+  users: number;
 }
 
 export default function Dashboard() {
   const [stats, setStats] = useState<Stats | null>(null);
 
   useEffect(() => {
-    Promise.all([adminGetProducts(), adminGetOrders(), adminGetMessages(), adminGetSubscribers()])
-      .then(([products, orders, messages, subscribers]) =>
+    Promise.all([
+      adminGetProducts(),
+      adminGetOrders(),
+      adminGetMessages(),
+      adminGetSubscribers(),
+      adminGetUsers(),
+    ])
+      .then(([products, orders, messages, subscribers, users]) =>
         setStats({
           products: products.products.length,
           orders: orders.orders.length,
           messages: messages.messages.length,
           subscribers: subscribers.subscribers.length,
+          users: users.users.length,
         }),
       )
-      .catch(() => setStats({ products: 0, orders: 0, messages: 0, subscribers: 0 }));
+      .catch(() => setStats({ products: 0, orders: 0, messages: 0, subscribers: 0, users: 0 }));
   }, []);
 
   const cards = [
     { label: 'Mahsulotlar', value: stats?.products, icon: FiBox, to: '/admin/products' },
     { label: 'Buyurtmalar', value: stats?.orders, icon: FiShoppingBag, to: '/admin/orders' },
+    { label: 'Foydalanuvchilar', value: stats?.users, icon: FiUser, to: '/admin/users' },
     { label: 'Xabarlar', value: stats?.messages, icon: FiMail, to: '/admin/messages' },
     { label: 'Obunachilar', value: stats?.subscribers, icon: FiUsers, to: '/admin/subscribers' },
   ];

@@ -28,6 +28,7 @@ import OrdersList from './pages/admin/OrdersList';
 import MessagesList from './pages/admin/MessagesList';
 import SubscribersList from './pages/admin/SubscribersList';
 import ReviewsList from './pages/admin/ReviewsList';
+import UsersList from './pages/admin/UsersList';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
                     <Route path="messages" element={<MessagesList />} />
                     <Route path="subscribers" element={<SubscribersList />} />
                     <Route path="reviews" element={<ReviewsList />} />
+                    <Route path="users" element={<UsersList />} />
                   </Route>
                 </Route>
               </Routes>

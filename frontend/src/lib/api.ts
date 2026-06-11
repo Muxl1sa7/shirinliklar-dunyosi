@@ -140,6 +140,17 @@ export const adminGetMessages = () =>
 export const adminGetSubscribers = () =>
   request<{ subscribers: SubscriberRecord[] }>('/api/admin/subscribers', { credentials: 'include' });
 
+export interface AdminUserRecord {
+  id: string;
+  name: string;
+  email: string;
+  phone: string;
+  createdAt: string;
+}
+
+export const adminGetUsers = () =>
+  request<{ users: AdminUserRecord[] }>('/api/admin/users', { credentials: 'include' });
+
 // --- Customer auth ---
 
 export interface CustomerUser {
