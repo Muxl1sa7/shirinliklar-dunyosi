@@ -14,7 +14,7 @@ export default function OrdersList() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-slate-800">Buyurtmalar</h1>
+      <h1 className="text-2xl font-bold text-slate-800">Maxsus buyurtmalar</h1>
 
       <div className="mt-6 overflow-x-auto rounded-2xl bg-white shadow-sm">
         <table className="w-full text-left text-sm">
@@ -39,7 +39,7 @@ export default function OrdersList() {
             ) : orders.length === 0 ? (
               <tr>
                 <td colSpan={7} className="px-4 py-6 text-center text-slate-400">
-                  Buyurtmalar topilmadi.
+                  Maxsus buyurtmalar topilmadi.
                 </td>
               </tr>
             ) : (

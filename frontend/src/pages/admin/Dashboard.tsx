@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiBox, FiShoppingBag, FiMail, FiUsers, FiUser } from 'react-icons/fi';
+import { FiBox, FiShoppingBag, FiCreditCard, FiMail, FiUsers, FiUser } from 'react-icons/fi';
 import {
   adminGetProducts,
   adminGetOrders,
+  adminGetPurchases,
   adminGetMessages,
   adminGetSubscribers,
   adminGetUsers,
@@ -12,6 +13,7 @@ import {
 interface Stats {
   products: number;
   orders: number;
+  purchases: number;
   messages: number;
   subscribers: number;
   users: number;
@@ -24,25 +26,28 @@ export default function Dashboard() {
     Promise.all([
       adminGetProducts(),
       adminGetOrders(),
+      adminGetPurchases(),
       adminGetMessages(),
       adminGetSubscribers(),
       adminGetUsers(),
     ])
-      .then(([products, orders, messages, subscribers, users]) =>
+      .then(([products, orders, purchases, messages, subscribers, users]) =>
         setStats({
           products: products.products.length,
           orders: orders.orders.length,
+          purchases: purchases.purchases.length,
           messages: messages.messages.length,
           subscribers: subscribers.subscribers.length,
           users: users.users.length,
         }),
       )
-      .catch(() => setStats({ products: 0, orders: 0, messages: 0, subscribers: 0, users: 0 }));
+      .catch(() => setStats({ products: 0, orders: 0, purchases: 0, messages: 0, subscribers: 0, users: 0 }));
   }, []);
 
   const cards = [
     { label: 'Mahsulotlar', value: stats?.products, icon: FiBox, to: '/admin/products' },
-    { label: 'Buyurtmalar', value: stats?.orders, icon: FiShoppingBag, to: '/admin/orders' },
+    { label: 'Maxsus buyurtmalar', value: stats?.orders, icon: FiShoppingBag, to: '/admin/orders' },
+    { label: 'Oddiy buyurtmalar', value: stats?.purchases, icon: FiCreditCard, to: '/admin/purchases' },
     { label: 'Foydalanuvchilar', value: stats?.users, icon: FiUser, to: '/admin/users' },
     { label: 'Xabarlar', value: stats?.messages, icon: FiMail, to: '/admin/messages' },
     { label: 'Obunachilar', value: stats?.subscribers, icon: FiUsers, to: '/admin/subscribers' },
