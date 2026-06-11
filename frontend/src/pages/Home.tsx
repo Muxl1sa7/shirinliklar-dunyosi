@@ -185,7 +185,7 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl">
           <img
-            src="https://images.unsplash.com/photo-1606890658317-7d14490b76fd?auto=format&fit=crop&w=1400&q=80"
+            src="https://images.unsplash.com/photo-1542124948-dc391252a940?auto=format&fit=crop&w=1400&q=80"
             alt="Maxsus taklif"
             className="h-72 w-full object-cover sm:h-80"
           />
