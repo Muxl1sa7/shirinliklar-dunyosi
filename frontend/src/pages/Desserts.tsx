@@ -1,8 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import PageHeader from '../components/PageHeader';
 import ProductCard from '../components/ProductCard';
-import { desserts } from '../data/products';
-import type { DessertCategory } from '../types';
+import { getProducts } from '../lib/api';
+import type { DessertCategory, Product } from '../types';
 
 const tabs: { label: string; value: DessertCategory | 'all' }[] = [
   { label: 'Barchasi', value: 'all' },
@@ -15,11 +15,20 @@ const tabs: { label: string; value: DessertCategory | 'all' }[] = [
 ];
 
 export default function Desserts() {
+  const [desserts, setDesserts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<DessertCategory | 'all'>('all');
+
+  useEffect(() => {
+    getProducts({ type: 'dessert' })
+      .then((data) => setDesserts(data.products))
+      .catch(() => setDesserts([]))
+      .finally(() => setLoading(false));
+  }, []);
 
   const filtered = useMemo(
     () => (activeTab === 'all' ? desserts : desserts.filter((item) => item.category === activeTab)),
-    [activeTab],
+    [desserts, activeTab],
   );
 
   return (
@@ -43,7 +52,9 @@ export default function Desserts() {
           ))}
         </div>
 
-        {filtered.length > 0 ? (
+        {loading ? (
+          <p className="text-center text-brown-400">Yuklanmoqda...</p>
+        ) : filtered.length > 0 ? (
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
             {filtered.map((item) => (
               <ProductCard key={item.id} product={item} />

@@ -1,8 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import PageHeader from '../components/PageHeader';
 import ProductCard from '../components/ProductCard';
-import { cakes } from '../data/products';
-import type { CakeCategory } from '../types';
+import { getProducts } from '../lib/api';
+import type { CakeCategory, Product } from '../types';
 
 const tabs: { label: string; value: CakeCategory | 'all' }[] = [
   { label: 'Barchasi', value: 'all' },
@@ -17,12 +17,21 @@ const tabs: { label: string; value: CakeCategory | 'all' }[] = [
 const PAGE_SIZE = 6;
 
 export default function Cakes() {
+  const [cakes, setCakes] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<CakeCategory | 'all'>('all');
   const [page, setPage] = useState(1);
 
+  useEffect(() => {
+    getProducts({ type: 'cake' })
+      .then((data) => setCakes(data.products))
+      .catch(() => setCakes([]))
+      .finally(() => setLoading(false));
+  }, []);
+
   const filtered = useMemo(
     () => (activeTab === 'all' ? cakes : cakes.filter((cake) => cake.category === activeTab)),
-    [activeTab],
+    [cakes, activeTab],
   );
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
@@ -54,7 +63,9 @@ export default function Cakes() {
           ))}
         </div>
 
-        {paginated.length > 0 ? (
+        {loading ? (
+          <p className="text-center text-brown-400">Yuklanmoqda...</p>
+        ) : paginated.length > 0 ? (
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
             {paginated.map((cake) => (
               <ProductCard key={cake.id} product={cake} />

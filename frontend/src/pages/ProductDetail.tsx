@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { FiFeather, FiTruck, FiShield, FiMinus, FiPlus, FiHeart, FiAlertTriangle, FiCheckCircle } from 'react-icons/fi';
-import { getProductById } from '../data/products';
+import { getProductById } from '../lib/api';
 import { useCart } from '../context/CartContext';
 import { useFavorites } from '../context/FavoritesContext';
 import { formatPrice } from '../lib/format';
+import type { Product } from '../types';
 
 const features = [
   { icon: FiFeather, label: 'Yangi ingredientlar' },
@@ -27,14 +28,34 @@ const sampleReviews = [
 
 export default function ProductDetail() {
   const { id } = useParams();
-  const product = id ? getProductById(id) : undefined;
   const { addToCart } = useCart();
   const { isFavorite, toggleFavorite } = useFavorites();
 
-  const [size, setSize] = useState<string | undefined>(product?.sizes?.[0]);
+  const [product, setProduct] = useState<Product | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [size, setSize] = useState<string | undefined>(undefined);
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState<'description' | 'reviews'>('description');
   const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    if (!id) return;
+    getProductById(id)
+      .then((data) => {
+        setProduct(data.product);
+        setSize(data.product.sizes?.[0]);
+      })
+      .catch(() => setProduct(null))
+      .finally(() => setLoading(false));
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-24 text-center">
+        <p className="text-brown-400">Yuklanmoqda...</p>
+      </div>
+    );
+  }
 
   if (!product) {
     return (

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { useState, type SubmitEvent } from 'react';
+import { useEffect, useState, type SubmitEvent } from 'react';
 import { FiTruck, FiAward, FiFeather } from 'react-icons/fi';
 import ProductCard from '../components/ProductCard';
-import { getProductById } from '../data/products';
-import { subscribeNewsletter } from '../lib/api';
+import { getProducts, subscribeNewsletter } from '../lib/api';
+import type { Product } from '../types';
 
 const categories = [
   {
@@ -55,6 +55,18 @@ const bestSellerIds = ['chocolate-dream', 'red-velvet-cake', 'caramel-cake', 'fe
 export default function Home() {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [bestSellers, setBestSellers] = useState<Product[]>([]);
+
+  useEffect(() => {
+    getProducts()
+      .then((data) => {
+        const ordered = bestSellerIds
+          .map((id) => data.products.find((product) => product.id === id))
+          .filter((product): product is Product => Boolean(product));
+        setBestSellers(ordered);
+      })
+      .catch(() => setBestSellers([]));
+  }, []);
 
   const handleSubscribe = async (e: SubmitEvent) => {
     e.preventDefault();
@@ -163,11 +175,9 @@ export default function Home() {
         <h2 className="text-center font-display text-3xl font-bold text-brown-800 sm:text-4xl">Eng Ko'p Sotilganlar</h2>
         <div className="mx-auto mt-2 mb-10 h-1 w-16 rounded-full bg-brown-300" />
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
-          {bestSellerIds.map((id) => {
-            const product = getProductById(id);
-            if (!product) return null;
-            return <ProductCard key={id} product={product} />;
-          })}
+          {bestSellers.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
         </div>
       </section>
 

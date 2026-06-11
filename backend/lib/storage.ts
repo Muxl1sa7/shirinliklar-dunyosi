@@ -22,3 +22,14 @@ export async function appendRecord<T>(fileName: string, record: T): Promise<void
 
   await fs.writeFile(filePath, JSON.stringify(records, null, 2), 'utf-8');
 }
+
+export async function readRecords<T>(fileName: string): Promise<T[]> {
+  const filePath = path.join(DATA_DIR, fileName);
+
+  try {
+    const content = await fs.readFile(filePath, 'utf-8');
+    return JSON.parse(content) as T[];
+  } catch {
+    return [];
+  }
+}

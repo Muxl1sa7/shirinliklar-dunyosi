@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { products } from '@/data/products';
+import { getAllProducts } from '@/lib/products';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
   const type = searchParams.get('type');
   const category = searchParams.get('category');
 
-  let result = products;
+  let result = await getAllProducts();
 
   if (type) {
     result = result.filter((product) => product.type === type);
