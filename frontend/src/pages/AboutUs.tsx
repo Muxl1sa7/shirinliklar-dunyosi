@@ -29,7 +29,7 @@ export default function AboutUs() {
           </div>
           <div className="overflow-hidden rounded-3xl">
             <img
-              src="https://images.unsplash.com/photo-1577106263724-2c8e03bbe7a3?auto=format&fit=crop&w=900&q=80"
+              src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80"
               alt="Oshpaz tort bezamoqda"
               className="h-full w-full object-cover"
             />

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FiSearch, FiUser, FiShoppingCart, FiHeart, FiMenu, FiX } from 'react-icons/fi';
 import { GiCupcake } from 'react-icons/gi';
 import { useCart } from '../context/CartContext';
@@ -18,10 +18,23 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [query, setQuery] = useState('');
   const { total } = useCart();
   const { favorites } = useFavorites();
   const { isAuthenticated } = useAuth();
+  const navigate = useNavigate();
   const profileTo = isAuthenticated ? '/profile' : '/login';
+
+  const handleSearchSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    const trimmed = query.trim();
+    if (trimmed) {
+      navigate(`/search?q=${encodeURIComponent(trimmed)}`);
+      setSearchOpen(false);
+      setQuery('');
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-brown-50 bg-white/95 backdrop-blur">
@@ -52,7 +65,11 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-4">
-          <button className="hidden text-brown-700 transition-colors hover:text-brown-400 sm:block" aria-label="Qidirish">
+          <button
+            onClick={() => setSearchOpen((prev) => !prev)}
+            className="hidden text-brown-700 transition-colors hover:text-brown-400 sm:block"
+            aria-label="Qidirish"
+          >
             <FiSearch size={20} />
           </button>
           <Link
@@ -90,6 +107,33 @@ export default function Header() {
           </button>
         </div>
       </div>
+
+      {searchOpen && (
+        <div className="border-t border-brown-50 px-3 py-3 sm:px-6 lg:px-8">
+          <form onSubmit={handleSearchSubmit} className="mx-auto flex max-w-7xl items-center gap-3">
+            <FiSearch className="shrink-0 text-brown-400" size={18} />
+            <input
+              type="text"
+              autoFocus
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Mahsulot qidirish..."
+              className="w-full bg-transparent text-sm text-brown-800 outline-none placeholder:text-brown-300"
+            />
+            <button
+              type="button"
+              onClick={() => {
+                setSearchOpen(false);
+                setQuery('');
+              }}
+              className="shrink-0 text-brown-400 transition-colors hover:text-brown-700"
+              aria-label="Qidiruvni yopish"
+            >
+              <FiX size={18} />
+            </button>
+          </form>
+        </div>
+      )}
 
       {open && (
         <nav className="flex flex-col gap-1 border-t border-brown-50 px-4 py-3 lg:hidden">

@@ -10,6 +10,7 @@ import RequireAuth from './components/RequireAuth';
 import Home from './pages/Home';
 import Cakes from './pages/Cakes';
 import Desserts from './pages/Desserts';
+import Search from './pages/Search';
 import ProductDetail from './pages/ProductDetail';
 import CustomOrder from './pages/CustomOrder';
 import AboutUs from './pages/AboutUs';
@@ -43,6 +44,7 @@ function App() {
                   <Route index element={<Home />} />
                   <Route path="cakes" element={<Cakes />} />
                   <Route path="desserts" element={<Desserts />} />
+                  <Route path="search" element={<Search />} />
                   <Route path="product/:id" element={<ProductDetail />} />
                   <Route path="custom-order" element={<CustomOrder />} />
                   <Route path="about" element={<AboutUs />} />
