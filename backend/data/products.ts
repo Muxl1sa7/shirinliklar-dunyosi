@@ -1,5 +1,5 @@
 export type CakeCategory = 'chocolate' | 'fruit' | 'birthday' | 'wedding' | 'special' | 'diet';
-export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts' | 'creamy';
+export type DessertCategory = 'macarons' | 'cupcakes' | 'brownies' | 'cookies' | 'donuts' | 'creamy' | 'diet';
 
 export interface Product {
   id: string;

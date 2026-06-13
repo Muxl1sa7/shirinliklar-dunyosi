@@ -1890,5 +1890,1094 @@
       "Zaytun yog'i"
     ],
     "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
+  },
+  {
+    "id": "macaron-vanilla",
+    "name": "Vanilli makaron",
+    "price": 58000,
+    "image": "https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Yumshoq bodom uni qobiqlari orasida boy vanil ganashi bilan to'ldirilgan frantsuz makaroni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Vanil ganashi",
+      "Sariyog'"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "macaron-chocolate",
+    "name": "Shokoladli makaron",
+    "price": 62000,
+    "image": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Qora shokoladli ganash bilan to'ldirilgan, intensiv shokolad ta'mli makaron.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Kakao kukuni",
+      "Shokoladli ganash"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "macaron-pistachio",
+    "name": "Pista makaron",
+    "price": 68000,
+    "image": "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Yashil rangli qobiq va pista kremi bilan to'ldirilgan nafis makaron.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Pista pastasi",
+      "Pista kremi"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "macaron-raspberry",
+    "name": "Malina makaron",
+    "price": 64000,
+    "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Pushti qobiq ichida nordon-shirin malina jemi bilan to'ldirilgan makaron.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Malina jemi",
+      "Oziq-ovqat bo'yog'i"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "macaron-lemon",
+    "name": "Limon makaron",
+    "price": 58000,
+    "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Sariq qobiq va tetiklashtiruvchi limon kurdi bilan to'ldirilgan makaron.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Limon kurdi",
+      "Limon qaymog'i"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "macaron-caramel",
+    "name": "Karamel makaron",
+    "price": 65000,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Tuzlangan karamel kremi bilan to'ldirilgan, oltin rangli qobiqli makaron.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Karamel sousi",
+      "Tuz"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "macaron-rose",
+    "name": "Atirgul makaron",
+    "price": 68000,
+    "image": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Atirgul ekstrakti bilan iforlangan krem to'ldirmali, romantik pushti makaron.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Atirgul ekstrakti",
+      "Mascarpone krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "macaron-coffee",
+    "name": "Qahva makaron",
+    "price": 62000,
+    "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "macarons",
+    "description": "Espresso bilan boyitilgan krem to'ldirmali, jonlantiruvchi qahva ta'mli makaron.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Shakar kukuni",
+      "Espresso kofe",
+      "Sariyog'li krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-chocolate",
+    "name": "Shokoladli kapkeyk",
+    "price": 48000,
+    "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Yumshoq shokoladli biskvit ustiga shokoladli krem bilan bezatilgan kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-vanilla",
+    "name": "Vanilli kapkeyk",
+    "price": 45000,
+    "image": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Klassik vanilli biskvit ustiga oq sariyog'li krem bilan bezatilgan nafis kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Vanil ekstrakti",
+      "Sariyog'li krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-red-velvet",
+    "name": "Red Velvet kapkeyk",
+    "price": 55000,
+    "image": "https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Qizil baxmal biskvit ustiga krem-pishloqli krem bilan bezatilgan kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Qizil oziq-ovqat bo'yog'i",
+      "Krem-pishloqli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-strawberry",
+    "name": "Qulupnayli kapkeyk",
+    "price": 50000,
+    "image": "https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Yangi qulupnay pyuresi qo'shilgan biskvit ustiga qulupnayli krem bilan bezatilgan kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Qulupnay pyuresi",
+      "Qulupnayli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-lemon",
+    "name": "Limonli kapkeyk",
+    "price": 47000,
+    "image": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Limon qaymog'i bilan tatlandirilgan biskvit ustiga limonli krem bilan bezatilgan tetiklashtiruvchi kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Limon qaymog'i",
+      "Limonli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-carrot",
+    "name": "Sabzili kapkeyk",
+    "price": 52000,
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Maydalangan sabzi va dolchin qo'shilgan biskvit ustiga krem-pishloqli krem bilan bezatilgan kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Maydalangan sabzi",
+      "Tuxum",
+      "Shakar",
+      "Dolchin",
+      "Krem-pishloqli krem",
+      "Yong'oq"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-oreo",
+    "name": "Oreo kapkeyk",
+    "price": 56000,
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Maydalangan Oreo pechenyelari qo'shilgan biskvit ustiga Oreo bo'lakchali krem bilan bezatilgan kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Oreo pechenyelari",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "cupcake-salted-caramel",
+    "name": "Tuzlangan karamel kapkeyk",
+    "price": 58000,
+    "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cupcakes",
+    "description": "Karamel sousi singdirilgan biskvit ustiga tuzlangan karamel kremi va karamel tomchilari bilan bezatilgan kapkeyk.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Karamel sousi",
+      "Tuz",
+      "Sariyog'li krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "brownie-walnut",
+    "name": "Yong'oqli brauni",
+    "price": 44000,
+    "image": "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Maydalangan yong'oq bo'lakchalari qo'shilgan, zich va shokoladga boy brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Yong'oq bo'lakchalari"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "brownie-caramel",
+    "name": "Karamelli brauni",
+    "price": 46000,
+    "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Ichiga karamel sousi quyilgan, ustidan karamel tomchilari bilan bezatilgan brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni",
+      "Karamel sousi"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "brownie-cream-cheese",
+    "name": "Krem-pishloqli brauni",
+    "price": 48000,
+    "image": "https://images.unsplash.com/photo-1578775887804-699de7086ff9?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Shokoladli xamir ustiga krem-pishloq qatlami bilan marmar uslubida pishirilgan brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni",
+      "Krem-pishloq (cream cheese)"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "brownie-mint",
+    "name": "Yalpizli brauni",
+    "price": 44000,
+    "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Salqin yalpiz ta'mi va shokoladli qatlamlar uyg'unlashgan tetiklashtiruvchi brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni",
+      "Yalpiz ekstrakti",
+      "Shokoladli qatlam"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "brownie-peanut-butter",
+    "name": "Yer-yong'oq yog'li brauni",
+    "price": 47000,
+    "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Ichiga yer-yong'oq yog'i oqimi qo'shilgan, shokolad va yong'oq ta'mi uyg'un brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni",
+      "Yer-yong'oq yog'i"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "brownie-raspberry",
+    "name": "Malinali brauni",
+    "price": 46000,
+    "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Yangi malina bo'lakchalari qo'shilgan, nordon-shirin ta'mga ega shokoladli brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni",
+      "Malina"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "brownie-triple-chocolate",
+    "name": "Uch xil shokoladli brauni",
+    "price": 50000,
+    "image": "https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Qora, sutli va oq shokolad bo'lakchalari qo'shilgan, eng boy shokolad ta'mli brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Sutli shokolad",
+      "Oq shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "brownie-blondie",
+    "name": "Oq shokoladli blondi",
+    "price": 45000,
+    "image": "https://images.unsplash.com/photo-1565299543923-37dd37887442?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "brownies",
+    "description": "Kakaosiz, oq shokolad va vanil asosida tayyorlangan yumshoq va shirin \"blondie\" brauni.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Oq shokolad",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Bug'doy uni",
+      "Vanil ekstrakti"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-oatmeal",
+    "name": "Suli pechene",
+    "price": 30000,
+    "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "Suli yormasi va mayiz qo'shilgan, to'yimli va to'qima boy pechene.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Suli yormasi",
+      "Bug'doy uni",
+      "Sariyog'",
+      "Shakar",
+      "Tuxum",
+      "Mayiz",
+      "Dolchin"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-sugar",
+    "name": "Shakarli pechene",
+    "price": 28000,
+    "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "Klassik yumshoq shakarli pechene, ustidan rangli shakar kukuni bilan sepilgan.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Sariyog'",
+      "Shakar",
+      "Tuxum",
+      "Vanil ekstrakti",
+      "Rangli shakar kukuni"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-shortbread",
+    "name": "Shortbread pechene",
+    "price": 30000,
+    "image": "https://images.unsplash.com/photo-1611293388250-580b08c4a145?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "Faqat uch asosiy tarkibiy qismdan tayyorlangan, mo'rt va sariyog'li an'anaviy pechene.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Sariyog'",
+      "Bug'doy uni",
+      "Shakar kukuni",
+      "Tuz"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-ginger",
+    "name": "Zanjabilli pechene",
+    "price": 32000,
+    "image": "https://images.unsplash.com/photo-1542124948-dc391252a940?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "Zanjabil va dolchin ziravorlari bilan tayyorlangan, isituvchi ta'mli pechene.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Sariyog'",
+      "Shakar",
+      "Asal",
+      "Zanjabil",
+      "Dolchin",
+      "Mixed ziravorlar"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-double-chocolate",
+    "name": "Ikki xil shokoladli pechene",
+    "price": 36000,
+    "image": "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "Kakaoli xamir va ichiga qo'shilgan sutli shokolad bo'lakchalari bilan ikki marta shokoladli pechene.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Sariyog'",
+      "Shakar",
+      "Tuxum",
+      "Sutli shokolad bo'lakchalari"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-peanut-butter",
+    "name": "Yer-yong'oq yog'li pechene",
+    "price": 34000,
+    "image": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "An'anaviy chizilgan naqshli, boy yer-yong'oq ta'miga ega yumshoq pechene.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Yer-yong'oq yog'i",
+      "Bug'doy uni",
+      "Sariyog'",
+      "Shakar",
+      "Tuxum"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-white-choc-macadamia",
+    "name": "Oq shokolad-makadamiya pechene",
+    "price": 38000,
+    "image": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "Oq shokolad bo'lakchalari va maydalangan makadamiya yong'oqlari bilan premium pechene.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Sariyog'",
+      "Shakar",
+      "Tuxum",
+      "Oq shokolad bo'lakchalari",
+      "Makadamiya yong'og'i"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "cookie-pistachio",
+    "name": "Pista pechene",
+    "price": 38000,
+    "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "cookies",
+    "description": "Maydalangan pista qo'shilgan yashil rangli, nafis ta'mli pechene.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Sariyog'",
+      "Shakar",
+      "Tuxum",
+      "Pista",
+      "Pista pastasi"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "donut-chocolate-glazed",
+    "name": "Shokoladli glazurli donut",
+    "price": 28000,
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Yumshoq xamir ustiga qora shokolad glazuri bilan qoplangan klassik donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Shokoladli glazur"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "donut-strawberry",
+    "name": "Qulupnayli donut",
+    "price": 30000,
+    "image": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Pushti qulupnayli glazur va quritilgan qulupnay bo'lakchalari bilan bezatilgan donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Qulupnayli glazur",
+      "Quritilgan qulupnay"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "donut-cinnamon",
+    "name": "Koritsli donut",
+    "price": 28000,
+    "image": "https://images.unsplash.com/photo-1533910534207-90f31029a78e?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Dolchin va shakar aralashmasiga botirilgan, isituvchi ziravorli donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Dolchin",
+      "Sariyog'"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "donut-sprinkle",
+    "name": "Rangli sepkichli donut",
+    "price": 32000,
+    "image": "https://images.unsplash.com/photo-1631206753348-db44968fd440?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Yorqin rangli glazur va rangli shakar sepkichlari bilan bezatilgan bayramona donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Vanilli glazur",
+      "Rangli sepkichlar"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "donut-boston-cream",
+    "name": "Boston Cream donut",
+    "price": 36000,
+    "image": "https://images.unsplash.com/photo-1607920591413-4ec007e70023?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Ichiga vanilli krem to'ldirilgan, ustidan shokoladli glazur bilan qoplangan donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Vanilli krem to'ldirma",
+      "Shokoladli glazur"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "donut-matcha",
+    "name": "Matcha donut",
+    "price": 35000,
+    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Yapon matcha choyi kukuni bilan tatlandirilgan, yashil rangli original donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Matcha kukuni",
+      "Oq glazur"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "donut-lemon-glaze",
+    "name": "Limon glazurli donut",
+    "price": 30000,
+    "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Tetiklashtiruvchi limon glazuri bilan qoplangan, nordon-shirin ta'mli donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Limon glazuri",
+      "Limon qaymog'i"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "donut-caramel",
+    "name": "Karamelli donut",
+    "price": 32000,
+    "image": "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "donuts",
+    "description": "Issiq karamel sousiga botirilgan va tuzlangan karamel tomchilari bilan bezatilgan donut.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Xamirturush",
+      "Karamel sousi",
+      "Tuz"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "creme-brulee",
+    "name": "Kreme-brule",
+    "price": 70000,
+    "image": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "creamy",
+    "description": "Yumshoq vanilli krem ustida qarsillagan karamellangan shakar qatlami bo'lgan frantsuz deserti.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qaymoq (krem)",
+      "Tuxum sarig'i",
+      "Shakar",
+      "Vanil",
+      "Karamellangan shakar qatlami"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "chocolate-mousse",
+    "name": "Shokoladli mus",
+    "price": 65000,
+    "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "creamy",
+    "description": "Havodor va yumshoq qora shokoladli mus, krem bilan bezatilgan.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Qora shokolad",
+      "Qaymoq (krem)",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "eclair",
+    "name": "Ekler",
+    "price": 60000,
+    "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "creamy",
+    "description": "Ichiga vanilli krem to'ldirilgan, ustidan shokoladli glazur bilan qoplangan frantsuz pirogi.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Choux xamiri",
+      "Tuxum",
+      "Sariyog'",
+      "Vanilli krem",
+      "Shokoladli glazur"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "profiterole",
+    "name": "Profitrol",
+    "price": 68000,
+    "image": "https://images.unsplash.com/photo-1612203985729-70726954388c?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "creamy",
+    "description": "Kichik choux pomidorchalar ichiga to'ldirilgan krem va ustidan shokolad sousi bilan serviralanadi.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Choux xamiri",
+      "Tuxum",
+      "Sariyog'",
+      "Vanilli krem",
+      "Shokolad sousi"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "custard-tart",
+    "name": "Vanil krem tart",
+    "price": 62000,
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "creamy",
+    "description": "Mo'rt tart asosi ichiga quyilgan, yumshoq va boy vanilli krem deserti.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Sariyog'",
+      "Tuxum",
+      "Sut",
+      "Shakar",
+      "Vanil"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "trifle",
+    "name": "Trifle desert",
+    "price": 70000,
+    "image": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "creamy",
+    "description": "Biskvit, krem va mevali jele qatlamlaridan iborat shaffof stakanlarda serviralanadigan desert.",
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Biskvit",
+      "Qaymoq (krem)",
+      "Mevali jele",
+      "Yangi mevalar",
+      "Shakar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "diet-energy-balls",
+    "name": "Energiya to'plari",
+    "price": 35000,
+    "image": "https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Pishirishni talab qilmaydigan, xurmo, yong'oq va kakaodan tayyorlangan tabiiy energiya to'plari.",
+    "dietFriendly": true,
+    "healthNote": "Tarkibida qo'shilgan shakar yo'q - tabiiy shirinlik xurmo va asaldan olinadi. Energiya va tola manbai sifatida sportchilar va parhez tutganlar uchun mos.",
+    "ingredients": [
+      "Xurmo",
+      "Yong'oq aralashmasi",
+      "Suli yormasi",
+      "Kakao kukuni",
+      "Asal"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "diet-chia-pudding",
+    "name": "Chia pudding",
+    "price": 40000,
+    "image": "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Chia urug'lari kokos sutida ivitilgan, ustiga yangi mevalar bilan bezatilgan yengil desert.",
+    "dietFriendly": true,
+    "healthNote": "Chia urug'lari Omega-3 va tolaga boy, qo'shilgan shakar yo'q - qandli diabet va parhez tutganlar uchun xavfsiz.",
+    "ingredients": [
+      "Chia urug'i",
+      "Kokos suti",
+      "Asal",
+      "Vanil",
+      "Yangi mevalar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "diet-greek-yogurt-parfait",
+    "name": "Yunon yogurtli parfe",
+    "price": 42000,
+    "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Yunon yogurti, granola va yangi rezavorlar qatlamlaridan iborat yengil va to'yimli desert.",
+    "dietFriendly": true,
+    "healthNote": "Yunon yogurti protein va probiotikaga boy, yog' miqdori past - sog'lom ovqatlanish va parhez uchun mos.",
+    "ingredients": [
+      "Yunon yogurti",
+      "Granola",
+      "Asal",
+      "Rezavor mevalar",
+      "Yong'oq"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "diet-almond-macaron",
+    "name": "Bodom unli parhez makaron",
+    "price": 58000,
+    "image": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Steviya va eritritol bilan tatlandirilgan, past glikemik indeksli parhez makaron.",
+    "dietFriendly": true,
+    "healthNote": "Shakar o'rniga steviya va eritritol ishlatilgan - past glikemik indeks tufayli qandli diabet bemorlariga ehtiyotkorlik bilan tavsiya etiladi.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum oqi",
+      "Steviya",
+      "Eritritol",
+      "Yengil krem to'ldirma"
+    ],
+    "storage": "Sovutgichda 0-4°C da 5 kungacha saqlang."
+  },
+  {
+    "id": "diet-oat-cookies",
+    "name": "Shakarsiz suli pechene",
+    "price": 30000,
+    "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Shakar qo'shilmagan, faqat banan va xurmo bilan tatlandirilgan to'liq donli suli pechene.",
+    "dietFriendly": true,
+    "healthNote": "Tarkibida qo'shilgan shakar yo'q - tabiiy tatlandirgichlar (banan, xurmo) ishlatilgan, tolaga boy va parhez uchun mos.",
+    "ingredients": [
+      "Suli yormasi",
+      "Banan",
+      "Xurmo",
+      "Zaytun yog'i",
+      "Dolchin"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "diet-baked-donut",
+    "name": "Pishirilgan parhez donut",
+    "price": 32000,
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Yog'da qovurilmagan, pechda pishirilgan, to'liq bug'doy unidan tayyorlangan yengil donut.",
+    "dietFriendly": true,
+    "healthNote": "Yog'da qovurilmagan (pechda pishirilgan) va to'liq don unidan tayyorlangan - oddiy donutlarga nisbatan yog' miqdori sezilarli kamroq.",
+    "ingredients": [
+      "To'liq bug'doy uni",
+      "Yunon yogurti",
+      "Asal",
+      "Tuxum",
+      "Vanil"
+    ],
+    "storage": "Xona haroratida 1-2 kun ichida iste'mol qiling."
+  },
+  {
+    "id": "diet-vegan-brownie",
+    "name": "Vegan brauni",
+    "price": 44000,
+    "image": "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Tuxum va sut mahsulotlarisiz, qora loviya va kakao asosida tayyorlangan zich brauni.",
+    "dietFriendly": true,
+    "healthNote": "Tarkibida tuxum, sut va sariyog' yo'q - vegan va laktoza intoleransiyasi bo'lgan mijozlar uchun xavfsiz.",
+    "ingredients": [
+      "Qora loviya",
+      "Kakao kukuni",
+      "Xurmo",
+      "Zaytun yog'i",
+      "Bodom uni"
+    ],
+    "storage": "Quruq, salqin joyda 5-7 kungacha saqlang."
+  },
+  {
+    "id": "diet-protein-cupcake",
+    "name": "Protein kapkeyk",
+    "price": 48000,
+    "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "Protein kukuni qo'shilgan, past kaloriyali Yunon yogurtli krem bilan bezatilgan sport kapkeyki.",
+    "dietFriendly": true,
+    "healthNote": "Protein kukuni qo'shilgan - sport va to'yimli ovqatlanish tarzini tutuvchilar uchun mos, shakar miqdori kamaytirilgan.",
+    "ingredients": [
+      "Protein kukuni",
+      "Suli uni",
+      "Tuxum oqi",
+      "Banan",
+      "Yunon yogurtli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
+  },
+  {
+    "id": "diet-fruit-tart",
+    "name": "Mevali parhez tart",
+    "price": 50000,
+    "image": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=800&q=80",
+    "type": "dessert",
+    "category": "diet",
+    "description": "To'liq donli tart asosi ustiga Yunon yogurti kremi va yangi mevalar bilan bezatilgan yengil desert.",
+    "dietFriendly": true,
+    "healthNote": "Yengil Yunon yogurtli krem va to'liq don un asosi - past yog' va shakar miqdori bilan parhez tutganlar uchun mos.",
+    "ingredients": [
+      "To'liq don uni",
+      "Yunon yogurti",
+      "Yangi mevalar",
+      "Asal",
+      "Zaytun yog'i"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3-4 kungacha saqlang."
   }
 ]
