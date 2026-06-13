@@ -80,6 +80,11 @@ export default function PurchasesList() {
                   <td className="max-w-xs px-4 py-3 text-slate-600">{purchase.address}</td>
                   <td className="whitespace-nowrap px-4 py-3 font-semibold text-slate-800">
                     {formatPrice(purchase.total)}
+                    {purchase.discount > 0 && (
+                      <div className="mt-1 text-xs font-normal text-green-600">
+                        Birinchi buyurtma -20% (-{formatPrice(purchase.discount)})
+                      </div>
+                    )}
                   </td>
                   <td className="whitespace-nowrap px-4 py-3 text-slate-600">**** {purchase.cardLast4}</td>
                   <td className="whitespace-nowrap px-4 py-3">

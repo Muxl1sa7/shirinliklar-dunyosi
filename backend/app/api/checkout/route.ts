@@ -2,7 +2,9 @@ import { NextResponse } from 'next/server';
 import { getCurrentUserId } from '@/lib/customerAuth';
 import { getProductById } from '@/lib/products';
 import { getPriceForSize } from '@/lib/pricing';
-import { createPurchaseOrder, type PurchaseOrderItem } from '@/lib/purchases';
+import { createPurchaseOrder, getPurchasesByUser, type PurchaseOrderItem } from '@/lib/purchases';
+
+const FIRST_ORDER_DISCOUNT_RATE = 0.2;
 
 interface CheckoutItemBody {
   productId: string;
@@ -100,12 +102,19 @@ export async function POST(request: Request) {
     });
   }
 
-  const total = orderItems.reduce((sum, item) => sum + item.lineTotal, 0);
+  const subtotal = orderItems.reduce((sum, item) => sum + item.lineTotal, 0);
   const cardLast4 = cardNumber.slice(-4);
+
+  const previousOrders = await getPurchasesByUser(userId);
+  const isFirstOrder = previousOrders.length === 0;
+  const discount = isFirstOrder ? Math.round(subtotal * FIRST_ORDER_DISCOUNT_RATE) : 0;
+  const total = subtotal - discount;
 
   const order = await createPurchaseOrder({
     userId,
     items: orderItems,
+    subtotal,
+    discount,
     total,
     cardLast4,
     address: address.trim(),

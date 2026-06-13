@@ -215,6 +215,8 @@ export interface PurchaseOrder {
   id: string;
   userId: string;
   items: PurchaseOrderItem[];
+  subtotal: number;
+  discount: number;
   total: number;
   status: 'paid' | 'received';
   cardLast4: string;

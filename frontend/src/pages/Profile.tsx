@@ -239,10 +239,20 @@ export default function Profile() {
                     })}
                   </div>
 
-                  <div className="mt-4 flex items-center justify-between border-t border-brown-50 pt-4">
-                    <p className="font-display text-base font-semibold text-brown-800">
-                      Jami: {formatPrice(order.total)}
-                    </p>
+                  <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-brown-50 pt-4">
+                    <div>
+                      {order.discount > 0 && (
+                        <p className="text-xs text-brown-400">
+                          <span className="line-through">{formatPrice(order.subtotal)}</span>
+                          <span className="ml-2 font-semibold text-green-600">
+                            Birinchi buyurtma chegirmasi -20%: -{formatPrice(order.discount)}
+                          </span>
+                        </p>
+                      )}
+                      <p className="font-display text-base font-semibold text-brown-800">
+                        Jami: {formatPrice(order.total)}
+                      </p>
+                    </div>
                     {order.status === 'paid' && (
                       <button
                         type="button"
