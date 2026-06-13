@@ -38,7 +38,7 @@
     "price": 140000,
     "image": "https://images.unsplash.com/photo-1586985289906-406988974504?auto=format&fit=crop&w=800&q=80",
     "type": "cake",
-    "category": "birthday",
+    "category": "special",
     "description": "Yumshoq red velvet biskvit va kremli pishloq krem bilan bezatilgan klassik tort. Tug'ilgan kun bayramlari uchun mukammal.",
     "sizes": [
       "1 kg",
@@ -262,7 +262,7 @@
     "price": 145000,
     "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80",
     "type": "cake",
-    "category": "wedding",
+    "category": "special",
     "description": "KitKat shokoladlari bilan o'ralgan, M&M's va shokolad drip bilan bezatilgan ko'zga yoqimli tort.",
     "sizes": [
       "1 kg",
@@ -510,5 +510,1385 @@
       "Tuz"
     ],
     "storage": "Quruq joyda, gigroskopik idishda 7 kungacha saqlang."
+  },
+  {
+    "id": "dark-chocolate-cake",
+    "name": "Qora shokolad tort",
+    "price": 130000,
+    "image": "https://images.unsplash.com/photo-1583743089695-4b816a340f82?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "chocolate",
+    "description": "Yuqori sifatli qora shokolad va boy kakao ta'mi bilan tayyorlangan, shokolad ishqibozlari uchun mukammal tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Qora shokolad",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli ganash"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "milk-chocolate-cake",
+    "name": "Sutli shokolad tort",
+    "price": 115000,
+    "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "chocolate",
+    "description": "Yumshoq sutli shokolad krem va nafis biskvit qatlamlaridan iborat, har kim sevadigan klassik tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Sutli shokolad",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Sut",
+      "Shokoladli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "chocolate-fudge-cake",
+    "name": "Shokoladli fadj tort",
+    "price": 135000,
+    "image": "https://images.unsplash.com/photo-1607478900766-efe13248b125?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "chocolate",
+    "description": "Zich va namlikka boy fadj (fudge) tekstura, qalin shokolad ganash bilan qoplangan - chinakam shokolad shinavandalari uchun.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Qora shokolad",
+      "Kakao kukuni",
+      "Sariyog'",
+      "Tuxum",
+      "Shakar",
+      "Shokoladli fadj sous",
+      "Shokoladli ganash"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "nutella-hazelnut-cake",
+    "name": "Nutella-findiq tort",
+    "price": 145000,
+    "image": "https://images.unsplash.com/photo-1612203985729-70726954388c?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "chocolate",
+    "description": "Nutella krem va maydalangan findiq bilan boyitilgan, har bir bo'lagida findiqli shokolad ta'mi seziladigan hashamatli tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Nutella krem",
+      "Findiq (yong'oq)",
+      "Shokoladli ganash"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "choco-banana-cake",
+    "name": "Shokolad-banan tort",
+    "price": 120000,
+    "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "chocolate",
+    "description": "Pishgan banan pyuresi va shokoladli biskvitning mazali uyg'unligi - yumshoq va to'yimli tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Banan pyuresi",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "triple-chocolate-cake",
+    "name": "Uch xil shokoladli tort",
+    "price": 150000,
+    "image": "https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "chocolate",
+    "description": "Qora, sutli va oq shokoladning uch qatlamli birikmasi - shokolad sevuvchilar uchun haqiqiy bayram.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Qora shokolad",
+      "Sutli shokolad",
+      "Oq shokolad",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Shokoladli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "chocolate-tres-leches-cake",
+    "name": "Shokoladli tres leches tort",
+    "price": 125000,
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "chocolate",
+    "description": "Uch xil sut aralashmasiga shimdirilgan shokoladli biskvit, ustidan yumshoq krem bilan bezatilgan - lotin-amerika uslubidagi nam va shirin tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Quyuq sut",
+      "Erkalangan sut",
+      "Qaymoq",
+      "Shokoladli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "orange-cake",
+    "name": "Apelsinli tort",
+    "price": 120000,
+    "image": "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "fruit",
+    "description": "Yangi apelsin qiyomi va sharbati bilan tayyorlangan, tetiklantiruvchi sitrus ta'mli yengil tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Biskvit uni",
+      "Tuxum",
+      "Shakar",
+      "Apelsin qiyomi va sharbati",
+      "Qaymoqli krem",
+      "Apelsin jele"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "mango-cake",
+    "name": "Mango tort",
+    "price": 135000,
+    "image": "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "fruit",
+    "description": "Pishgan mango pyuresi va yengil qaymoqli krem bilan tayyorlangan, tropik mevalar ta'mini his qiluvchi tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Biskvit uni",
+      "Tuxum",
+      "Shakar",
+      "Mango pyuresi",
+      "Yangi mango bo'laklari",
+      "Qaymoqli krem",
+      "Mango jele"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "cherry-cake",
+    "name": "Olchali tort",
+    "price": 130000,
+    "image": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "fruit",
+    "description": "Nordon-shirin olcha va yumshoq biskvit qatlamlaridan iborat, klassik mevali tortlar ichida sevimlilardan biri.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Biskvit uni",
+      "Tuxum",
+      "Shakar",
+      "Olcha (gilos) kompoti",
+      "Qaymoqli krem",
+      "Olcha sousi"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "pomegranate-cake",
+    "name": "Anorli tort",
+    "price": 130000,
+    "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "fruit",
+    "description": "Anor sharbati va donalari bilan bezatilgan, nordon-shirin ta'mga ega original mevali tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Biskvit uni",
+      "Tuxum",
+      "Shakar",
+      "Anor sharbati",
+      "Anor donalari",
+      "Qaymoqli krem",
+      "Anor jele"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "mixed-berry-cake",
+    "name": "Aralash rezavorli tort",
+    "price": 140000,
+    "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "fruit",
+    "description": "Qulupnay, ko'kateroq va malina kabi turli rezavorlar bilan boyitilgan, yozgi kayfiyat baxsh etuvchi tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Biskvit uni",
+      "Tuxum",
+      "Shakar",
+      "Qulupnay",
+      "Ko'kateroq",
+      "Malina",
+      "Qaymoqli krem",
+      "Rezavorli sous"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "peach-cake",
+    "name": "Shaftolili tort",
+    "price": 125000,
+    "image": "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "fruit",
+    "description": "Yumshoq shaftoli bo'laklari va yengil vanilli krem bilan tayyorlangan, nafis va shirin mevali tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Biskvit uni",
+      "Tuxum",
+      "Shakar",
+      "Shaftoli bo'laklari",
+      "Shaftoli pyuresi",
+      "Qaymoqli krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-chocolate-cake",
+    "name": "Bento tort - Shokolad",
+    "price": 50000,
+    "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Kichik va shirin shokoladli bento tort - tug'ilgan kun va kichik tantanalar uchun ideal shaxsiy tort.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Shokolad"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli krem",
+      "Dekorativ bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-vanilla-cake",
+    "name": "Bento tort - Vanil",
+    "price": 45000,
+    "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Nafis vanilli biskvit va yumshoq kremdan tayyorlangan kichik bento tort - har qanday kichik bayram uchun mos.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Vanil"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Vanil ekstrakti",
+      "Sariyog'",
+      "Vanilli krem",
+      "Dekorativ bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-strawberry-cake",
+    "name": "Bento tort - Qulupnay",
+    "price": 50000,
+    "image": "https://images.unsplash.com/photo-1557925923-cd4648e211a0?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Yangi qulupnay bo'laklari bilan bezatilgan kichik shaxsiy tort - yorqin va shirin tug'ilgan kun sovg'asi.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Qulupnay"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Biskvit uni",
+      "Tuxum",
+      "Shakar",
+      "Yangi qulupnay",
+      "Qaymoqli krem",
+      "Qulupnay jele",
+      "Dekorativ bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-red-velvet-cake",
+    "name": "Bento tort - Red Velvet",
+    "price": 55000,
+    "image": "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Klassik red velvet biskvit va krem-pishloq krem asosida tayyorlangan kichik bento tort.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Red Velvet"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Kefir",
+      "Oziq-ovqat bo'yog'i",
+      "Krem-pishloq krem",
+      "Dekorativ bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-oreo-cake",
+    "name": "Bento tort - Oreo",
+    "price": 55000,
+    "image": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Maydalangan Oreo pechenyelari va shokoladli krem bilan bezatilgan, yoshlar orasida mashhur kichik tort.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Oreo"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Oreo pechenyelari",
+      "Shokoladli krem",
+      "Dekorativ bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-number-cake",
+    "name": "Raqamli bento tort",
+    "price": 60000,
+    "image": "https://images.unsplash.com/photo-1571506165871-ee72a35bc9d4?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Tug'ilgan kun yoshini bildiruvchi raqam shaklidagi kichik tort - vanil va qulupnay kremi bilan bezatilgan.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Vanil",
+      "Qulupnay"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Vanilli krem",
+      "Yangi qulupnay",
+      "Dekorativ shamlar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-smiley-cake",
+    "name": "Smayli bento tort",
+    "price": 55000,
+    "image": "https://images.unsplash.com/photo-1578775887804-699de7086ff9?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Kulayotgan yuz dizayni bilan bezatilgan, ko'tarinki kayfiyat ulashuvchi kichik shokoladli bento tort.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli krem",
+      "Rangli oziq-ovqat bo'yog'i"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-drip-cake",
+    "name": "Drip-dekor bento tort",
+    "price": 60000,
+    "image": "https://images.unsplash.com/photo-1535920527002-b35e96722eb9?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Shokoladli drip (oqim) dekori va kichik shirinliklar bilan bezatilgan zamonaviy bento tort.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli drip sous",
+      "Mini shirinliklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "bento-pinata-cake",
+    "name": "Pinata-syurpriz bento tort",
+    "price": 65000,
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "birthday",
+    "description": "Ichida rangli konfetlar yashiringan, kesilganda syurpriz chiqaruvchi qiziqarli bento tort - bolalar bayramlari uchun ajoyib tanlov.",
+    "sizes": [
+      "0.5 kg",
+      "0.7 kg",
+      "1 kg"
+    ],
+    "flavors": [
+      "Vanil",
+      "Shokolad"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Kichik shaxsiy o'lchamdagi tort - bitta yoki ikki kishi uchun mo'ljallangan porsiya. Tarkibida shakar va yog' bo'lgani uchun qandli diabet yoki parhez tutganlar ehtiyot bo'lishi tavsiya etiladi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Vanilli krem",
+      "Rangli konfetlar",
+      "Dekorativ bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 2 kungacha saqlang (yangi mevali tort tezroq buziladi)."
+  },
+  {
+    "id": "wedding-white-tier-cake",
+    "name": "2 qavatli oq to'y tort",
+    "price": 95000,
+    "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Oq fondan bilan qoplangan, nafis 2 qavatli klassik to'y torti - har qanday to'y marosimini bezaydi.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Oq fondan",
+      "Dekorativ qand gullari"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-floral-tier-cake",
+    "name": "3 qavatli gulli to'y tort",
+    "price": 110000,
+    "image": "https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Yangi gullar va qand gullari bilan bezatilgan 3 qavatli hashamatli to'y torti - romantik to'y kunlari uchun mukammal.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Oq fondan",
+      "Yangi gullar",
+      "Qand gullari"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-pearl-cake",
+    "name": "Marvarid bezakli to'y tort",
+    "price": 115000,
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Yedi bo'ladigan marvarid donalari va nafis naqshlar bilan bezatilgan, hashamatli ko'p qavatli to'y torti.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Oq fondan",
+      "Yedi bo'ladigan marvarid donalar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-gold-cake",
+    "name": "Oltin bezakli to'y tort",
+    "price": 125000,
+    "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Oltin rangli yedi bo'ladigan bezaklar va nafis qavatlar bilan tayyorlangan premium to'y torti.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Oq fondan",
+      "Yedi bo'ladigan oltin varaq"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-pastel-cake",
+    "name": "Pastel rangli to'y tort",
+    "price": 100000,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Yumshoq pastel ranglarda bezatilgan, nafis va romantik ko'rinishga ega ko'p qavatli to'y torti.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Pastel rangli fondan",
+      "Qand bezaklari"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-rose-cake",
+    "name": "Romantik atirgul to'y tort",
+    "price": 105000,
+    "image": "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Qo'lda yasalgan qand atirgullari bilan bezatilgan, nafis va romantik ko'rinishdagi ko'p qavatli to'y torti.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Oq fondan",
+      "Qand atirgullari"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-classic-vanilla-cake",
+    "name": "Klassik vanil to'y tort",
+    "price": 95000,
+    "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "An'anaviy vanilli biskvit va nafis sariyog'li krem bilan tayyorlangan, klassik ko'rinishdagi ko'p qavatli to'y torti.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Vanil ekstrakti",
+      "Sariyog'li krem",
+      "Oq fondan"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-chocolate-tier-cake",
+    "name": "Shokoladli qavatli to'y tort",
+    "price": 110000,
+    "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Shokoladli biskvit qavatlari va nafis dekor bilan tayyorlangan, shokolad ishqibozlari uchun ko'p qavatli to'y torti.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Kakao kukuni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli ganash",
+      "Oq fondan",
+      "Dekorativ bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "wedding-premium-4tier-cake",
+    "name": "Premium 4 qavatli to'y tort",
+    "price": 130000,
+    "image": "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "wedding",
+    "description": "Eng katta va hashamatli, 4 qavatli premium to'y torti - yuzlab mehmonlar uchun mo'ljallangan, to'liq bezatilgan.",
+    "sizes": [
+      "1 kg",
+      "3 kg",
+      "5 kg",
+      "7 kg",
+      "10 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Oq fondan",
+      "Qand gullari",
+      "Yedi bo'ladigan bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang. Yetkazib berishdan oldin ehtiyotkorlik bilan tashish tavsiya etiladi."
+  },
+  {
+    "id": "pikachu-cake",
+    "name": "Pikachu tort",
+    "price": 160000,
+    "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "special",
+    "description": "Sevimli multfilm qahramoni Pikachu shaklida bezatilgan, bolalar bayramlari uchun quvonchli va rangli tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Banan pyuresi",
+      "Vanil ekstrakti",
+      "Sariyog'li krem",
+      "Sariq oziq-ovqat bo'yog'i",
+      "Shokoladli bezaklar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "gold-leaf-cake",
+    "name": "Oltin varaqli tort",
+    "price": 200000,
+    "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "special",
+    "description": "Sof yedi bo'ladigan oltin varaq bilan bezatilgan, eng hashamatli va nodir tortlardan biri - maxsus kunlar uchun.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Qora shokolad",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Shokoladli ganash",
+      "Yedi bo'ladigan oltin varaq"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "macaron-tower-cake",
+    "name": "Makaron minorasi tort",
+    "price": 175000,
+    "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "special",
+    "description": "Rang-barang frantsuz makaronlari bilan minorasimon bezatilgan, ko'zni qamashtiruvchi premium tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Bodom uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'li krem",
+      "Rang-barang makaronlar",
+      "Oziq-ovqat bo'yoqlari"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "lotus-biscoff-cake",
+    "name": "Lotus Biscoff tort",
+    "price": 155000,
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "special",
+    "description": "Lotus Biscoff pechenyelari va karamelli krem bilan tayyorlangan, noyob va boy ta'mli premium tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Lotus Biscoff pechenyelari",
+      "Karamel sous",
+      "Sariyog'li krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "geode-cake",
+    "name": "Geode (kristall) tort",
+    "price": 180000,
+    "image": "https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "special",
+    "description": "Shakar kristallari bilan tog' jinsini eslatuvchi 'geode' uslubida bezatilgan, san'at asariga o'xshash noyob tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil",
+      "Qulupnay",
+      "Karamel"
+    ],
+    "dietFriendly": false,
+    "healthNote": "Tarkibida shakar va yog' miqdori yuqori bo'lgani uchun qandli diabet kasalligi yoki parhez tutgan shaxslarga tavsiya etilmaydi.",
+    "ingredients": [
+      "Bug'doy uni",
+      "Tuxum",
+      "Shakar",
+      "Sariyog'",
+      "Sariyog'li krem",
+      "Shakar kristallari",
+      "Oziq-ovqat bo'yoqlari"
+    ],
+    "storage": "Sovutgichda 0-4°C da 3 kungacha saqlang."
+  },
+  {
+    "id": "diet-almond-keto-cake",
+    "name": "Bodom unli keto tort",
+    "price": 125000,
+    "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "diet",
+    "description": "Bodom uni asosida, shakarsiz va kam uglevodli - keto parhezini tutuvchilar uchun maxsus tayyorlangan tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Vanil",
+      "Yong'oqli"
+    ],
+    "dietFriendly": true,
+    "healthNote": "Bodom uni asosida tayyorlangan, uglevodi va shakari past - keto va kam uglevodli parhez tutganlar uchun mos.",
+    "ingredients": [
+      "Bodom uni",
+      "Tuxum",
+      "Eritritol",
+      "Zaytun yog'i",
+      "Vanil ekstrakti",
+      "Yong'oq"
+    ],
+    "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
+  },
+  {
+    "id": "diet-vegan-cake",
+    "name": "Vegan tort",
+    "price": 115000,
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "diet",
+    "description": "Tuxum va sut mahsulotlarisiz, to'liq o'simlik mahsulotlaridan tayyorlangan yumshoq va mazali tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Vanil"
+    ],
+    "dietFriendly": true,
+    "healthNote": "Tarkibida tuxum va sut mahsulotlari yo'q - vegan va laktoza intoleransiyasi bo'lgan mijozlar uchun xavfsiz.",
+    "ingredients": [
+      "To'liq bug'doy uni",
+      "Kokos suti",
+      "Zig'ir urug'i",
+      "Agava siropi",
+      "Zaytun yog'i",
+      "Kakao kukuni"
+    ],
+    "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
+  },
+  {
+    "id": "diet-gluten-free-cake",
+    "name": "Glutensiz tort",
+    "price": 120000,
+    "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "diet",
+    "description": "Sholi va bodom uni asosida, glutensiz va yengil tekstura bilan tayyorlangan, mevali krem bilan bezatilgan tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Mevali",
+      "Vanil"
+    ],
+    "dietFriendly": true,
+    "healthNote": "Tarkibida bug'doy uni va gluten yo'q - gluten intoleransiyasi (sialyak kasalligi) bo'lgan mijozlar uchun xavfsiz.",
+    "ingredients": [
+      "Sholi uni",
+      "Bodom uni",
+      "Tuxum",
+      "Asal",
+      "Yunon yogurti",
+      "Yangi mevalar"
+    ],
+    "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
+  },
+  {
+    "id": "diet-honey-pineapple-cake",
+    "name": "Asalli-ananasli tort",
+    "price": 110000,
+    "image": "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "diet",
+    "description": "Tabiiy asal va ananas bo'laklari bilan shirinlangan, shakarsiz va yengil tropik tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Ananasli",
+      "Asalli"
+    ],
+    "dietFriendly": true,
+    "healthNote": "Shakar o'rniga asal va tabiiy meva shirinligi ishlatilgan - kaloriyasi past, qandli diabet va parhez tutganlar uchun xavfsiz.",
+    "ingredients": [
+      "To'liq bug'doy uni",
+      "Ananas bo'laklari",
+      "Asal",
+      "Tuxum",
+      "Zaytun yog'i",
+      "Yunon yogurti krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
+  },
+  {
+    "id": "diet-greek-yogurt-cake",
+    "name": "Yunon yogurtli light tort",
+    "price": 105000,
+    "image": "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "diet",
+    "description": "Yunon yogurti asosidagi yengil krem va kam yog'li biskvit bilan tayyorlangan, kaloriyasi past nafis tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Vanil",
+      "Limonli"
+    ],
+    "dietFriendly": true,
+    "healthNote": "Yunon yogurti hisobiga protein miqdori yuqori va yog'i past - sog'lom turmush tarzini yurituvchilar uchun mos.",
+    "ingredients": [
+      "To'liq bug'doy uni",
+      "Yunon yogurti",
+      "Tuxum",
+      "Steviya",
+      "Limon qiyomi",
+      "Zaytun yog'i"
+    ],
+    "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
+  },
+  {
+    "id": "diet-protein-cake",
+    "name": "Protein tort",
+    "price": 120000,
+    "image": "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "diet",
+    "description": "Protein kukuni va to'liq don uni bilan boyitilgan, sport bilan shug'ullanuvchilar uchun to'yimli va kam shakarli tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Shokolad",
+      "Yong'oqli"
+    ],
+    "dietFriendly": true,
+    "healthNote": "Protein kukuni qo'shilgan - sport va to'yimli ovqatlanish tartibida bo'lganlar uchun mos, kaloriyasi nazoratlangan.",
+    "ingredients": [
+      "To'liq bug'doy uni",
+      "Protein kukuni",
+      "Tuxum",
+      "Kakao kukuni",
+      "Asal",
+      "Yong'oq",
+      "Yunon yogurti krem"
+    ],
+    "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
+  },
+  {
+    "id": "diet-sugar-free-berry-cake",
+    "name": "Shakarsiz rezavorli tort",
+    "price": 115000,
+    "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80",
+    "type": "cake",
+    "category": "diet",
+    "description": "Shakar qo'shilmagan, eritritol va yangi rezavorlar bilan shirinlangan yengil va sog'lom tort.",
+    "sizes": [
+      "1 kg",
+      "1.5 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "flavors": [
+      "Rezavorli"
+    ],
+    "dietFriendly": true,
+    "healthNote": "Shakar butunlay eritritol bilan almashtirilgan - qandli diabet kasalligiga ega shaxslar uchun xavfsiz va past glikemik indeksga ega.",
+    "ingredients": [
+      "To'liq bug'doy uni",
+      "Eritritol",
+      "Tuxum",
+      "Yangi rezavorlar (qulupnay, ko'kateroq)",
+      "Yunon yogurti krem",
+      "Zaytun yog'i"
+    ],
+    "storage": "Sovutgichda 0-4°C da 4 kungacha saqlang."
   }
 ]
